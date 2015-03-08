@@ -1,0 +1,35 @@
+shopt -s extglob   # Enable extended globbing
+set -o noclobber   # Don't clobber existing files on redirection
+set -o vi
+
+# Commands for remembering a directory
+# alias dir="ls --color=auto -lFh"
+# alias dir.all="ls --color=auto -alFh"
+
+# Commands for not overwriting files
+alias mv="/bin/mv -i"
+alias cp="/bin/cp -i"
+alias rm="/bin/rm -i"
+alias 651="cd ~/School/Fall2014/Stat651"
+alias 666="cd ~/School/Fall2014/Stat666"
+alias pdo="/usr/bin/pdflatex -output-directory=out"
+alias studentt="ssh -X studentt.byu.edu"
+alias scholap="ssh -X luiarthur@10.5.89.61"
+alias mstud="cd ~/.gvfs/SFTP\ for\ arthurll\ on\ studentt.byu.edu/data/arthurll/School/"
+alias CS="cd ~/Documents/CS"
+alias 536="cd ~/School/Winter2014/Stat536/Homework"
+alias 538="cd ~/School/Winter2014/Stat538/Final"
+alias 642="cd ~/School/Winter2014/Stat642/Homework"
+alias tma="tmux attach -t"
+alias llp="cd ~/Lilypond"
+alias dir="ls -hla "
+alias amazon="ssh -i ~/bin/sonata.pem ubuntu@52.11.22.119"
+
+# Set-up prompt
+# PS1="\h \t \w> "
+PS1="\h:\W> "
+
+export EDITOR=vi
+
+export PATH=~/bin:$PATH
+
