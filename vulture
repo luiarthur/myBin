@@ -1,4 +1,6 @@
 #!/bin/bash
+# Also make sure you have inotify
+# > sudo apt-get install inotify-tools
 
 SCRIPTNAME=$(basename "$0")
 
