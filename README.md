@@ -9,6 +9,18 @@ All other files go into ~/
 Also, install latex:
 > sudo apt-get install texlive-latex-extra
 
+And install:
+- git
+- vim-gnome
+- tmux
+- chrome
+- r-base-core
+- texlive-latex-extra
+- scala
+- scala syntax hl
+
+
+
 Useful Bash Commands to know:
     To find the number of processors
     > nproc
