@@ -1,5 +1,5 @@
 shopt -s extglob   # Enable extended globbing
-set -o noclobber   # Don't clobber existing files on redirection
+set -o noclobber   # Dont clobber existing files on redirection
 set -o vi
 
 # Commands for remembering a directory
