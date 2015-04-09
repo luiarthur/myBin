@@ -6,6 +6,7 @@ set showmatch               " Show matches for parenthesis, etc.
 set expandtab               " Use softtabs
 set tabstop=2 shiftwidth=2  " Set tab width
 set background=light        " Assume a light background (dark is the other option)
+set number                  " Show line numbers
 set autoindent
 
 " Return to last position
@@ -60,18 +61,19 @@ command -nargs=+ E :call ExecuteShellCommand(<f-args>)
 " Keybinding for word wrap
 nnoremap <C-x> gqap
 
-" Move between tabs --- Does not work within tmux.
-nnoremap <silent> <A-Right> :tabnext<CR>
-nnoremap <silent> <A-Left> :tabprevious<CR>
-
 " Switch to hex-editor
 noremap <F8> :%!xxd<CR>
 " Switch back
 noremap <F7> :%!xxd -r<CR>
 
-" Copy and paste between sessions
-"vmap <C-S-y> :w! ~/.vbuf<CR>      " copy the current visual selection to ~/.vbuf
-"nmap <C-S-p> :r ~/.vbuf<CR>       " paste the contents of the buffer file
+"" Copy and paste between sessions or X11 sessions
+"vmap <C-S-u> :w ! xsel<CR>       " copy the current visual selection to X11 clipboard using "xsel"
+"vmap <C-S-y> :w! ~/.vbuf<CR>     " copy the current visual selection to ~/.vbuf
+"nmap <C-S-p> :r ~/.vbuf<CR>      " paste the contents of the buffer file
+
+" Move around displayed lines
+nnoremap <Up> gk
+nnoremap <Down> gj
 
 "Copy onto and paste from clipboard
 vmap <C-S-u> :w ! xsel<CR>       " copy the current visual selection to X11 clipboard using "xsel"
@@ -80,10 +82,10 @@ nmap <C-S-p> "+p<CR>
 
 
 " Lilypond Syntax Highlighting
-filetype off
-set runtimepath+=~/lilypond/usr/share/lilypond/current/vim
-filetype on
+"filetype off
+"set runtimepath+=~/lilypond/usr/share/lilypond/current/vim
+"filetype on
+"syntax on
 
-au BufRead,BufNewFile *.scala set filetype=scala
-au! Syntax scala source ~/vim/.vim/syntax/scala.vim
-
+" Scala syntax highlighting. Run this line in terminal ONCE to get the files:
+"> mkdir -p ~/.vim/{ftdetect,indent,syntax} && for d in ftdetect indent syntax ; do wget --no-check-certificate -O ~/.vim/$d/scala.vim https://raw.githubusercontent.com/derekwyatt/vim-scala/master/syntax/scala.vim; done
