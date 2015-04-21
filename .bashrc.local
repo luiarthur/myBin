@@ -32,4 +32,5 @@ PS1="\h:\W> "
 export EDITOR=vi
 
 export PATH=~/bin:$PATH
+export PATH=~/bin/sbt/bin:$PATH # sbt is a building tool for scala.
 
