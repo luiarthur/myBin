@@ -19,9 +19,25 @@ And install:
 - scala
 - scala syntax hl
 
+
+
 Download Armadillo (Linear Algebra Library for C++) from:
     http://arma.sourceforge.net/download.html
     unpack in home directory
+
+
+
+To install go:
+  git clone https://go.googlesource.com/go
+  cd go 
+  git checkout go1.4.1
+  cd src
+  ./all.bash
+
+Detailed Instructions for installing go:
+https://golang.org/doc/install/source
+
+
 
 Useful Bash Commands to know:
     To find the number of processors
