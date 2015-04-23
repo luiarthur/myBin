@@ -33,4 +33,5 @@ export EDITOR=vi
 
 export PATH=~/bin:$PATH
 export PATH=~/bin/sbt/bin:$PATH # sbt is a building tool for scala.
-export PATH=~/go/bin:$PATH # For using go
+export GOPATH=~/go # Creating a variable for the go path
+export PATH=$GOPATH/bin:$PATH # For using go
