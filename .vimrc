@@ -2,6 +2,7 @@
 " highligh installation.
 " For Installation Deatils, see https://github.com/gmarik/Vundle.vim
 " To launch add the Plugin to the Plugin section.
+
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -12,8 +13,11 @@ call vundle#begin()
 "call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
+" After adding a Plugin, go to vim and run
+"   :PluginInstall
 Plugin 'gmarik/Vundle.vim'
 Plugin 'fatih/vim-go'
+Plugin 'derekwyatt/vim-scala'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
@@ -117,6 +121,3 @@ noremap <F7> :%!xxd -r<CR>
 vmap <C-S-y> :w! ~/.vbuf<CR>      " copy the current visual selection to ~/.vbuf
 nmap <C-S-p> :r ~/.vbuf<CR>       " paste the contents of the buffer file
 vmap <C-S-u> :w! xsel<CR>       " copy the current visual selection to X11 clipboard using "xsel"
-
-au BufRead,BufNewFile *.scala set filetype=scala
-au! Syntax scala source ~/vim/.vim/syntax/scala.vim
