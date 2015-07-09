@@ -22,16 +22,18 @@ And install:
     - put in home directory 
     - install: sbt (http://www.scala-sbt.org/download.html)
 - Julia
+    - With Julia, set up auto library loads
+      - The 2 items below are used to precompile packages / functions.
+      - https://groups.google.com/forum/#!topic/julia-users/uQfBNtJksRo
+      - `$ julia -e 'Pkg.update(); Pkg.checkout("Cairo")' && echo 'Base.require("Gadfly.jl")' > base/userimg.jl && make`
+      - Now in Julia, this takes no time: `using Gadfly,Distributions,DataFrames`
 - curl, rvm, Ruby, Gems, nodejs, Jekyll
     - Before installing rvm: `gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3`
     - Ruby on Rails: http://railsapps.github.io/installrubyonrails-ubuntu.html
     - `gem install jekyll`
+- ~~Go~~
 
-With Julia, set up auto library loads
-  - The 2 items below are used to precompile packages / functions.
-  - https://groups.google.com/forum/#!topic/julia-users/uQfBNtJksRo
-  - `$ julia -e 'Pkg.update(); Pkg.checkout("Cairo")' && echo 'Base.require("Gadfly.jl")' > base/userimg.jl && make`
-  - Now in Julia, this takes no time: `using Gadfly,Distributions,DataFrames`
+
 
 
 Download Armadillo (Linear Algebra Library for C++) from:
