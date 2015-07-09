@@ -32,6 +32,14 @@ And install:
     - Ruby on Rails: http://railsapps.github.io/installrubyonrails-ubuntu.html
     - `gem install jekyll`
 - ~~Go~~
+    -To install go:
+  > git clone https://go.googlesource.com/go
+  > cd go 
+  > git checkout go1.4.1
+  > cd src
+  > ./all.bash
+    - Detailed Instructions for installing go:
+      - https://golang.org/doc/install/source 
 
 
 
@@ -40,15 +48,7 @@ Download Armadillo (Linear Algebra Library for C++) from:
     http://arma.sourceforge.net/download.html
     unpack in home directory
 
-To install go:
-  git clone https://go.googlesource.com/go
-  cd go 
-  git checkout go1.4.1
-  cd src
-  ./all.bash
 
-Detailed Instructions for installing go:
-https://golang.org/doc/install/source
 
 
 
