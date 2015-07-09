@@ -17,7 +17,9 @@ And install:
 - chrome
 - r-base-core
 - texlive-latex-extra
-- scala
+- Scala
+    - Download here: http://www.scala-lang.org/download/
+    - put in home directory 
 - Julia
 - Ruby, Gems, Jekyll
 
