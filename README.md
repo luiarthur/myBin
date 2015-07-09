@@ -28,6 +28,10 @@ And install:
     - `gem install jekyll`
 
 With Julia, set up auto library loads
+  - The 2 items below are used to precompile packages / functions.
+  - https://groups.google.com/forum/#!topic/julia-users/uQfBNtJksRo
+  - `$ julia -e 'Pkg.update(); Pkg.checkout("Cairo")' && echo 'Base.require("Gadfly.jl")' > base/userimg.jl && make`
+  - Now in Julia, this takes no time: `using Gadfly,Distributions,DataFrames`
 
 
 Download Armadillo (Linear Algebra Library for C++) from:
