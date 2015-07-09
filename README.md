@@ -32,7 +32,7 @@ And install:
     - Ruby on Rails: http://railsapps.github.io/installrubyonrails-ubuntu.html
     - `gem install jekyll`
 - ~~Go~~
-    -To install go:
+    - To install go:
   > git clone https://go.googlesource.com/go
   > cd go 
   > git checkout go1.4.1
