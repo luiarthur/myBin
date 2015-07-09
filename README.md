@@ -40,6 +40,7 @@ https://golang.org/doc/install/source
 
 
 Useful Bash Commands to know:
+
     To find the number of processors
     > nproc
     
