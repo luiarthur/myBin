@@ -24,6 +24,7 @@ alias tma="tmux attach -t"
 alias llp="cd ~/Lilypond"
 alias dir="ls -hla "
 alias amazon="ssh -i ~/bin/sonata.pem ubuntu@52.11.22.119"
+alias taro="tar -zxvf"
 
 # Set-up prompt
 # PS1="\h \t \w> "
