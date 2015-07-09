@@ -23,6 +23,7 @@ And install:
     - install: sbt (http://www.scala-sbt.org/download.html)
 - Julia
 - Ruby, Gems, nodejs, Jekyll
+    - Before installing Curl: `gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3`
     - Ruby on Rails: http://railsapps.github.io/installrubyonrails-ubuntu.html
     - `gem install jekyll`
 
