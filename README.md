@@ -42,7 +42,6 @@ And install:
 
     - Detailed Instructions for installing go:
         - https://golang.org/doc/install/source 
-
 - Download Armadillo (Linear Algebra Library for C++) from:
     - http://arma.sourceforge.net/download.html
     - unpack in home directory
