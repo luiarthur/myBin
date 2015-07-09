@@ -20,6 +20,7 @@ And install:
 - Scala
     - Download here: http://www.scala-lang.org/download/
     - put in home directory 
+    - install: sbt (http://www.scala-sbt.org/download.html)
 - Julia
 - Ruby, Gems, Jekyll
 
