@@ -22,7 +22,9 @@ And install:
     - put in home directory 
     - install: sbt (http://www.scala-sbt.org/download.html)
 - Julia
-- Ruby, Gems, Jekyll
+- Ruby, Gems, nodejs, Jekyll
+    - Ruby on Rails: http://railsapps.github.io/installrubyonrails-ubuntu.html
+    - `gem install jekyll`
 
 With Julia, set up auto library loads
 
