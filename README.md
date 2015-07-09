@@ -49,8 +49,8 @@ And install:
 
 Useful Bash Commands to know:
 
-    To find the number of processors
-    > nproc
+    - To find the number of processors
+    `nproc`
     
     To see storage info:
     > df -h
