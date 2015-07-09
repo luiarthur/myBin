@@ -17,7 +17,7 @@ And install:
 - chrome
 - r-base-core
 - texlive-latex-extra
-- Scala
+- ~~Scala~~
     - Download here: http://www.scala-lang.org/download/
     - put in home directory 
     - install: sbt (http://www.scala-sbt.org/download.html)
