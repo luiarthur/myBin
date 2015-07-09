@@ -12,20 +12,21 @@ Also, install latex:
 And install:
 - git
 - vim-gnome
+- Vundle
 - tmux
 - chrome
 - r-base-core
 - texlive-latex-extra
 - scala
-- scala syntax hl
+- Julia
+- Ruby, Gems, Jekyll
 
+With Julia, set up auto library loads
 
 
 Download Armadillo (Linear Algebra Library for C++) from:
     http://arma.sourceforge.net/download.html
     unpack in home directory
-
-
 
 To install go:
   git clone https://go.googlesource.com/go
