@@ -47,9 +47,6 @@ And install:
     - unpack in home directory
 
 
-
-
-
 Useful Bash Commands to know:
 
     To find the number of processors
