@@ -36,17 +36,19 @@ export PATH=~/bin:$PATH
 export PATH=~/bin/sbt/bin:$PATH # sbt is a building tool for scala.
 export GOROOT=~/go # Creating a variable for the go path
 export PATH=$GOROOT/bin:$PATH # For using go
+export JULIA_HOME=~/julia/usr/bin
+export PATH=$JULIA_HOME:$PATH
 
 # To get scala, download the package from:
 #   http://www.scala-lang.org/download/
 # And follow the instructions in:
 #   http://www.scala-lang.org/download/install.html
-SCALA_HOME=$HOME/scala-2.11.6
-export SCALA_HOME
-PATH=$PATH:$SCALA_HOME/bin
-export PATH
+#SCALA_HOME=$HOME/scala-2.11.6
+#export SCALA_HOME
+#PATH=$PATH:$SCALA_HOME/bin
+#export PATH
 
-export VIM_DIR=$HOME/vim
-export VIMRUNTIME=$VIM_DIR/share/vim/vim74
+#export VIM_DIR=$HOME/vim
+#export VIMRUNTIME=$VIM_DIR/share/vim/vim74
 export EDITOR=vim
-export PATH=$VIM_DIR/bin:$PATH
+#export PATH=$VIM_DIR/bin:$PATH
