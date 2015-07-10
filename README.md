@@ -27,7 +27,7 @@ And install:
     - With Julia, set up auto library loads
       - The 2 items below are used to precompile packages / functions.
       - https://groups.google.com/forum/#!topic/julia-users/uQfBNtJksRo
-      - `$ julia -e 'Pkg.update(); Pkg.checkout("Cairo")' && echo 'Base.require("Gadfly.jl")' > base/userimg.jl && make`
+      - in ~/julia, run: `$ julia -e 'Pkg.update(); Pkg.checkout("Cairo")' && echo 'Base.require("Gadfly.jl")' > base/userimg.jl && make`
       - OR: 
         - in julia, run: `Pkg.update(); Pkg.add("Cairo")`
         - Add `userimg.jl` to `~/julia/base/`
