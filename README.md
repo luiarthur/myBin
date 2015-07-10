@@ -22,6 +22,8 @@ And install:
     - put in home directory 
     - install: sbt (http://www.scala-sbt.org/download.html)
 - Julia
+    - Google: Install Julia. Github has the instructions. 
+        - `git clone` the julia repo, then `make -j N`, where `N` is the number of processors to use in parallel.
     - With Julia, set up auto library loads
       - The 2 items below are used to precompile packages / functions.
       - https://groups.google.com/forum/#!topic/julia-users/uQfBNtJksRo
