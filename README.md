@@ -28,9 +28,6 @@ And install:
       - The 2 items below are used to precompile packages / functions.
       - https://groups.google.com/forum/#!topic/julia-users/uQfBNtJksRo
       - in `~/julia`, run: `$ julia -e 'Pkg.update(); Pkg.checkout("Cairo")' && echo 'Base.require("Gadfly.jl")' > base/userimg.jl && make`
-      - OR: 
-        - in julia, run: `Pkg.update(); Pkg.add("Cairo")`
-        - Add `userimg.jl` to `~/julia/base/`
       - Now in Julia, this takes no time: `using Gadfly,Distributions,DataFrames`
 - curl, rvm, Ruby, Gems, nodejs, Jekyll
     - Before installing rvm: `gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3`
