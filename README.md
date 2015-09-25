@@ -13,7 +13,7 @@ And install:
 - git
 - vim-gnome
 - Vundle
-- tmux
+- tmux (use tmux_install.sh if no root access. Sourced from https://gist.github.com/luiarthur/2825d04d80555a208047)
 - chrome
 - r-base-core
 - texlive-latex-extra
