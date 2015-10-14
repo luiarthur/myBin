@@ -37,7 +37,7 @@ And install:
         > In order to configure cmake before installation, run command below.  
         > $ cd ~/  
         > $ mkdir opt  
-        > $ ./configure --prefix=~/opt/cmake  
+        > $ ./configure --prefix=~/opt/cmake-2.8.3  
         > We basically instructed the install script to install CMake in /opt/cmake.  
         > Compilation:  
         > $ make  
@@ -45,9 +45,10 @@ And install:
         > $ make install  
         > Verification:  
         > After installation without any errors you can verify the installation by running the command below:  
-        > $ ~/opt/cmake/bin/cmake -version  
+        > $ ~/opt/cmake-2.8.3/bin/cmake -version  
         > The output should look something like below (depending upon cmake version you are installing).  
         > cmake version 2.8.3  
+        > add `~/opt/cmake-2.8.4/bin/` to search path in `.bashrc`
         
     - With Julia, set up auto library loads
       - The 2 items below are used to precompile packages / functions.
