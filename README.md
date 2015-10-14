@@ -22,8 +22,31 @@ And install:
     - put in home directory 
     - install: sbt (http://www.scala-sbt.org/download.html)
 - Julia
-    - Google: Install Julia. Github has the instructions. 
+    - Google: Install Julia. [Github](https://github.com/JuliaLang/julia) has the instructions. 
         - `git clone` the julia repo, then `make -j N`, where `N` is the number of processors to use in parallel.
+        - If `/bin/sh: cmake: command not found` and you need to install `cmake` without root access, 
+>Download:
+> $ wget http://www.cmake.org/files/v2.8/cmake-2.8.3.tar.gz
+> Extration of cmake source code from downloaded file:
+> $ tar xzf cmake-2.8.3.tar.gz
+> $ cd cmake-2.8.3
+> Configuration:
+> If you want to see the available conifuration options, run command below.
+> $ ./configure --help
+> In order to configure cmake before installation, run command below.
+> $ cd ~/
+> $ mkdir opt
+> $ ./configure --prefix=~/opt/cmake
+> We basically instructed the install script to install CMake in /opt/cmake.
+> Compilation:
+> $ make
+> Installation:
+> $ make install
+> Verification:
+> After installation without any errors you can verify the installation by running the command below:
+> $ ~/opt/cmake/bin/cmake -version
+> The output should look something like below (depending upon cmake version you are installing).
+> cmake version 2.8.3
     - With Julia, set up auto library loads
       - The 2 items below are used to precompile packages / functions.
       - https://groups.google.com/forum/#!topic/julia-users/uQfBNtJksRo
