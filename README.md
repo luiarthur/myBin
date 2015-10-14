@@ -50,7 +50,7 @@ And install:
         > cmake version 2.8.3  
         > add `~/opt/cmake-2.8.4/bin/` to search path in `.bashrc`
         
-    - With Julia, set up auto library loads
+    - ~~With Julia, set up auto library loads~~
       - The 2 items below are used to precompile packages / functions.
       - https://groups.google.com/forum/#!topic/julia-users/uQfBNtJksRo
       - in `~/julia`, run: `$ julia -e 'Pkg.update(); Pkg.add("Cairo")' && echo 'Base.require("Gadfly.jl")' > base/userimg.jl && make`
