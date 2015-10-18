@@ -77,13 +77,13 @@ Put this executable in `~/bin/gcalbird`
 
 
 Put this executable in `~/bin/ok`
-> #!/bin/bash  
+> \#!/bin/bash  
 >  
-> #tmux split-window -h -p 70  
-> #tmux send-keys -t 0 "  
-> #clear  
-> #echo; cal -h | grep -C6 --color "$(date +%e)"; gcalbird  
-> #"  
+> \#tmux split-window -h -p 70  
+> \#tmux send-keys -t 0 "  
+> \#clear  
+> \#echo; cal -h | grep -C6 --color "$(date +%e)"; gcalbird  
+> \#"  
 >  
 > tmux new -d -s gcal-session  
 > tmux send-keys -t gcal-session "  
