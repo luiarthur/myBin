@@ -73,7 +73,7 @@ Put this executable in `~/bin/gcalbird`
 > PAST=\`date +"%d/%m/%y" -d "-1 day"\`  
 > FUTURE=\`date +"%d/%m/%y" -d "+4 day"\`  
 >   
-> gcalcli agenda $PAST $FUTURE --calendar='UCSC' --calendar='Personal' | grep --color -C100 "$(date +"%a %b %e")\|Due"  
+> gcalcli agenda $PAST $FUTURE --calendar='UCSC' --calendar='Personal' | grep --color -C100 "$(date +"%a %b %e")\\|Due"  
 
 
 Put this executable in `~/bin/ok`
