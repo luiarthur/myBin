@@ -28,7 +28,7 @@ add these lines to ~/.tmux.conf
 > alias gcalls="gcalcli list"  
 > alias gcalw="gcalcli calw"  
 > alias gcaledit="gcalcli edit"  
-> export GREP_COLOR='00;38;5;226'  
+> export GREP_COLOR='01;38;5;226'  
 
 ### scripts
 Put this executable in `~/bin/gcal`
