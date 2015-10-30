@@ -22,7 +22,8 @@ And install:
     - put in home directory 
     - install: sbt (http://www.scala-sbt.org/download.html)
 - Julia
-    - Google: Install Julia. [Github](https://github.com/JuliaLang/julia) has the instructions. 
+    - If installing on a server, just download the [Generic Linux Binaries](http://julialang.org/downloads/)
+    - Otherwise, Google: Install Julia. [Github](https://github.com/JuliaLang/julia) has the instructions. 
         - `git clone` the julia repo, then `make -j N`, where `N` is the number of processors to use in parallel.
         - If `/bin/sh: cmake: command not found` and you need to install `cmake` without root access, visit [here](http://geeksww.com/tutorials/operating_systems/linux/installation/downloading_compiling_and_installing_cmake_on_linux.php): 
 
