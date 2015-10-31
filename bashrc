@@ -172,3 +172,6 @@ alias gcalls="gcalcli list"
 alias gcalw="gcalcli calw"
 alias gcaledit="gcalcli edit"
 export GREP_COLOR='01;38;5;226'
+
+# Python Setup
+export PYTHONSTARTUP=~/.pythonrc
