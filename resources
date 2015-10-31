@@ -1,0 +1,18 @@
+#!/bin/bash
+
+echo
+echo "$HOSTNAME:"
+
+echo -n "  CPU: "
+cat /proc/cpuinfo 2> /dev/null | grep 'model name' | cut -d ':' -f 2 | uniq -c | sed 's/^ *//'
+
+echo -n "  Memory: "
+cat /proc/meminfo 2> /dev/null | grep 'MemTotal' | cut -d ':' -f 2 | sed 's/^ *//'
+
+echo -n "  Uptime:"
+uptime 2> /dev/null
+
+echo 
+df -h | head -2
+
+echo

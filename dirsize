@@ -1,0 +1,17 @@
+#!/bin/bash
+
+function doit {
+  echo "$(du -sh) $PWD/"
+  for file in $(ls)
+  do
+    if [ -d "$file" ]
+    then
+      cd "$file"
+      doit
+      cd ..
+    fi
+  done 
+}
+
+doit
+
