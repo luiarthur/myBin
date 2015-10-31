@@ -163,3 +163,12 @@ export PATH=~/bin:$PATH
 #export SCALA_HOME
 #PATH=$PATH:$SCALA_HOME/bin
 #export PATH
+
+# gcalcli:
+alias gcalqa="gcalcli quick --calendar='Personal' --duration 0"
+alias gcaladd="gcalcli add --calendar='Personal'"
+alias gcalrm="gcalcli delete"
+alias gcalls="gcalcli list"
+alias gcalw="gcalcli calw"
+alias gcaledit="gcalcli edit"
+export GREP_COLOR='01;38;5;226'

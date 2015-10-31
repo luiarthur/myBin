@@ -1,0 +1,8 @@
+#!/bin/bash
+# Script to show my google calendar
+# See: http://wiki.bash-hackers.org/howto/getopts_tutorial
+
+PAST=`date +"%m/%d/%y" -d "-1 day"`
+FUTURE=`date +"%m/%d/%y" -d "+4 day"`
+
+gcalcli agenda $PAST $FUTURE --calendar='UCSC' --calendar='Personal' | grep --color -C100 "$(date +"%a %b %e")\|Due"
