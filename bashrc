@@ -107,3 +107,59 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 fi
 
 test -s ~/.bashrc.local && . ~/.bashrc.local || true
+
+### My Own Settings
+shopt -s extglob   # Enable extended globbing
+set -o noclobber   # Dont clobber existing files on redirection
+set -o vi
+
+# Commands for remembering a directory
+# alias dir="ls --color=auto -lFh"
+# alias dir.all="ls --color=auto -alFh"
+
+# Commands for not overwriting files
+alias mv="/bin/mv -i"
+alias cp="/bin/cp -i"
+alias rm="/bin/rm -i"
+
+# Alias
+alias pdo="/usr/bin/pdflatex -output-directory=out"
+alias llp="cd ~/Lilypond"
+alias dir="ls -hla "
+alias taro="tar -zxvf"
+alias tma="tmux attach -t"
+# Personal (BYU)
+alias 536="cd ~/School/Winter2014/Stat536/Homework"
+alias 538="cd ~/School/Winter2014/Stat538/Final"
+alias 642="cd ~/School/Winter2014/Stat642/Homework"
+alias 651="cd ~/School/Fall2014/Stat651"
+alias 666="cd ~/School/Fall2014/Stat666"
+alias amazon="ssh -i ~/bin/sonata.pem ubuntu@52.11.22.119"
+# UCSC
+alias firedance="ssh -X alui2@firedance.soe.ucsc.edu"
+alias citrisdance="ssh -X alui2@citrisdance.soe.ucsc.edu"
+alias grape="ssh -X alui2@grape.soe.ucsc.edu"
+
+# Set-up prompt
+PS1="\h:\W$ "
+
+export EDITOR=vim
+export PATH=~/bin:$PATH
+#export JULIA_HOME=~/julia/usr/bin
+#export PATH=$JULIA_HOME:$PATH
+
+
+# Go
+#export GOROOT=~/go # Creating a variable for the go path
+#export PATH=$GOROOT/bin:$PATH # For using go
+
+# Scala
+#export PATH=~/bin/sbt/bin:$PATH # sbt is a building tool for scala.
+# To get scala, download the package from:
+#   http://www.scala-lang.org/download/
+# And follow the instructions in:
+#   http://www.scala-lang.org/download/install.html
+#SCALA_HOME=$HOME/scala-2.11.6
+#export SCALA_HOME
+#PATH=$PATH:$SCALA_HOME/bin
+#export PATH

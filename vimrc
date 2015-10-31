@@ -15,24 +15,13 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 " After adding a Plugin, go to vim and run
 "   :PluginInstall
-Plugin 'gmarik/Vundle.vim'
-Plugin 'fatih/vim-go'
-Plugin 'derekwyatt/vim-scala'
-" The following are examples of different formats supported.
-" Keep Plugin commands between vundle#begin/end.
-" plugin on GitHub repo
-"Plugin 'tpope/vim-fugitive'
-" plugin from http://vim-scripts.org/vim/scripts.html
-"Plugin 'L9'
-" Git plugin not hosted on GitHub
-"Plugin 'git://git.wincent.com/command-t.git'
-" git repos on your local machine (i.e. when working on your own plugin)
-"Plugin 'file:///home/gmarik/path/to/plugin'
-" The sparkup vim script is in a subdirectory of this repo called vim.
-" Pass the path to set the runtimepath properly.
-"Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
-" Avoid a name conflict with L9
-"Plugin 'user/L9', {'name': 'newL9'}
+Plugin 'gmarik/Vundle.vim'       " Vim
+Plugin 'derekwyatt/vim-scala'    " Scala
+Plugin 'tmux-plugins/vim-tmux'   " tmux
+Plugin 'JuliaLang/julia-vim'     " Julia
+Plugin 'godlygeek/tabular'       " Auto Indent
+Plugin 'plasticboy/vim-markdown' " Markdown
+"Plugin 'fatih/vim-go'           " Go-lang
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
