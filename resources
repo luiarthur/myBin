@@ -4,15 +4,15 @@ echo
 echo "$HOSTNAME:"
 
 echo -n "  CPU: "
-cat /proc/cpuinfo 2> /dev/null | grep 'model name' | cut -d ':' -f 2 | uniq -c | sed 's/^ *//'
+cat /proc/cpuinfo | grep 'model name' | cut -d ':' -f 2 | uniq -c | sed 's/^ *//'
 
 echo -n "  Memory: "
-cat /proc/meminfo 2> /dev/null | grep 'MemTotal' | cut -d ':' -f 2 | sed 's/^ *//'
+cat /proc/meminfo | grep 'MemTotal' | cut -d ':' -f 2 | sed 's/^ *//' | cut -d ' ' -f 1 | awk '{$1=$1/(1024^2); print $1,"GB";}'
 
 echo -n "  Uptime:"
-uptime 2> /dev/null
+uptime
 
 echo 
-df -h | head -2
+df -h | head -2 | sed "s/^/  /"
 
 echo
