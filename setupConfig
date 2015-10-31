@@ -19,3 +19,6 @@ ln -s $currdir/gcal ~/bin/gcal
 ln -s $currdir/gcalbird ~/bin/gcalbird
 ln -s $currdir/ok ~/bin/ok
 
+# For use in UCSC
+ln -s $currdir/arrow ~/bin/arrow
+
