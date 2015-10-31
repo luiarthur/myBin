@@ -1,0 +1,21 @@
+#!/bin/bash
+
+currdir=`pwd`
+
+# Soft link the following to HOME:
+ln -s $currdir/bashrc ~/.bashrc
+ln -s $currdir/vimrc ~/.vimrc
+ln -s $currdir/vimrc.line-feeder-3 ~/.vimrc.line-feeder-3
+ln -s $currdir/gitignore_global ~/.gitignore_global
+ln -s $currdir/tmux.conf ~/.tmux.conf
+ln -s $currdir/pythonrc ~/.pythonrc
+
+# Soft link the following to ~/bin:
+ln -s $currdir/dirsize ~/bin/dirsize
+ln -s $currdir/resources ~/bin/resources
+ln -s $currdir/vulture ~/bin/vulture
+ln -s $currdir/gush ~/bin/gush
+ln -s $currdir/gcal ~/bin/gcal
+ln -s $currdir/gcalbird ~/bin/gcalbird
+ln -s $currdir/ok ~/bin/ok
+
