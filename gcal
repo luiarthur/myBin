@@ -5,6 +5,8 @@
 MORNING=`date +"%m/%d/%yT00:00"`
 CURRENT_TIME=`date +"%m/%d/%yT%H:%M"`
 MIDNIGHT=`date +"%m/%d/%yT23:59"`
+#gcal | grep --color -C10 "$(date +"%l"):$(date +"%M" | awk '{if ($1 > 30) print "00"; else print "30";end;}')$(date +"%p" | sed 's/AM/am/' | sed 's/PM/pm/')"
+
 
 EXE="gcalcli agenda $CURRENT_TIME $MIDNIGHT"
 DONE="0"
