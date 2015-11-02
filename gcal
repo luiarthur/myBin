@@ -2,9 +2,9 @@
 # Script to show my google calendar
 # See: http://wiki.bash-hackers.org/howto/getopts_tutorial
 
-MORNING=`date +"%d/%m/%yT00:00"`
-CURRENT_TIME=`date +"%d/%m/%yT%H:%M"`
-MIDNIGHT=`date +"%d/%m/%yT23:59"`
+MORNING=`date +"%m/%d/%yT00:00"`
+CURRENT_TIME=`date +"%m/%d/%yT%H:%M"`
+MIDNIGHT=`date +"%m/%d/%yT23:59"`
 
 EXE="gcalcli agenda $CURRENT_TIME $MIDNIGHT"
 DONE="0"
