@@ -7,7 +7,7 @@ These files go into ~/bin:
 All other files go into ~/
 
 Also, install latex [see this also](http://tex.stackexchange.com/questions/106113/is-there-any-way-to-have-a-latex-compiler-on-a-mac-without-root-access):
-> sudo apt-get install texlive-latex-extra
+> sudo apt-get install texlive
 
 And install:
 - git
