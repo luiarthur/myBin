@@ -11,6 +11,13 @@ function! LineFeederNextLine()
   normal j
 endfunction
 
+function! LineFeederSideLine()
+  call system("tmux select-pane -R")
+  call system("tmux send-keys " . shellescape(getline('.') . ""))
+  call system("tmux select-pane -L")
+  normal j
+endfunction
+
 function! LineFeederSetUp()
   let ext = expand("%:e")
   if ext == "R"
@@ -33,5 +40,6 @@ endfunction
 
 nnoremap <silent> <C-k> :call LineFeederSetUp()<cr>
 nnoremap <silent> <C-j> :call LineFeederNextLine()<cr>
+nnoremap <silent> <C-l> :call LineFeederSideLine()<cr>
 nnoremap <silent> <C-h> :%call LineFeederNextLine()<cr>
 
