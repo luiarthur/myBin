@@ -142,7 +142,7 @@ alias grape="ssh -X alui2@grape.soe.ucsc.edu"
 alias bin="cd ~/Repo/myBin"
 
 # Set-up prompt
-PS1="\h: \W$ "
+PS1="\h:\W$ "
 
 export EDITOR=vim
 export PATH=~/bin:$PATH
