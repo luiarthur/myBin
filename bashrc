@@ -128,6 +128,7 @@ alias llp="cd ~/Lilypond"
 alias dir="ls -hla "
 alias taro="tar -zxvf"
 alias tma="tmux attach -t"
+alias s="aspell --lang=en_GB -t -c"
 # Personal (BYU)
 alias 536="cd ~/School/Winter2014/Stat536/Homework"
 alias 538="cd ~/School/Winter2014/Stat538/Final"
