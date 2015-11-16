@@ -1,4 +1,5 @@
 #!/bin/bash
 
 pdflatex *.tex
-rm -f *.log *.aux
+pdflatex *.tex
+rm -f *.{log,aux,nav,out,snm,toc}
