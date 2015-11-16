@@ -9,4 +9,5 @@ tmux send-keys -t 0 "vi $1" Enter
 # in pane 1, vulture
 tmux send-keys -t 1 "vulture $1 comptex" Enter
 # in pane 2, evince 
+sleep 3
 tmux send-keys -t 2 "evince *.pdf &" Enter
