@@ -24,6 +24,16 @@ Plugin 'plasticboy/vim-markdown' " Markdown
 Plugin 'octol/vim-cpp-enhanced-highlight' " C++
 "Plugin 'fatih/vim-go'           " Go-lang
 
+" Add this to the syntax file in ~/.vim/bundle/vim-cpp-enhanced-highlight
+"" Arthur RcppArmadillo.
+"syntax keyword cppSTLtype vec
+"syntax keyword cppSTLtype mat
+"syntax keyword cppSTLtype NumericVector
+"syntax keyword cppSTLtype List
+"syntax keyword cppSTLfunction ones
+"syntax keyword cppSTLfunction zeros
+
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
