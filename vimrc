@@ -21,6 +21,7 @@ Plugin 'tmux-plugins/vim-tmux'   " tmux
 Plugin 'JuliaLang/julia-vim'     " Julia
 Plugin 'godlygeek/tabular'       " Auto Indent
 Plugin 'plasticboy/vim-markdown' " Markdown
+Plugin 'octol/vim-cpp-enhanced-highlight' " C++
 "Plugin 'fatih/vim-go'           " Go-lang
 
 " All of your Plugins must be added before the following line
