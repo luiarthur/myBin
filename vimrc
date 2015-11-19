@@ -33,6 +33,8 @@ Plugin 'octol/vim-cpp-enhanced-highlight' " C++
 "syntax keyword cppSTLtype List
 "syntax keyword cppSTLfunction ones
 "syntax keyword cppSTLfunction zeros
+"syntax keyword cppSTLnamespace arma
+"syntax keyword cppSTLnamespace Rcpp
 
 
 " All of your Plugins must be added before the following line
