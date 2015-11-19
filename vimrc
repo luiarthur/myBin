@@ -27,6 +27,7 @@ Plugin 'octol/vim-cpp-enhanced-highlight' " C++
 " Add this to the syntax file in ~/.vim/bundle/vim-cpp-enhanced-highlight
 "" Arthur RcppArmadillo.
 "syntax keyword cppSTLtype vec
+"syntax keyword cppSTLtype uvec
 "syntax keyword cppSTLtype mat
 "syntax keyword cppSTLtype NumericVector
 "syntax keyword cppSTLtype List
