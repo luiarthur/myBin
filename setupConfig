@@ -9,6 +9,7 @@ ln -s $currdir/vimrc.line-feeder-3 ~/.vimrc.line-feeder-3
 ln -s $currdir/gitignore_global ~/.gitignore_global
 ln -s $currdir/tmux.conf ~/.tmux.conf
 ln -s $currdir/pythonrc ~/.pythonrc
+ln -s $currdir/Rprofile ~/.Rprofile
 
 # Soft link the following to ~/bin:
 ln -s $currdir/dirsize ~/bin/dirsize
