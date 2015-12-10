@@ -2,6 +2,7 @@
 # For instructions on how to use getopts, see:  http://wiki.bash-hackers.org/howto/getopts_tutorial
 
 username="alui2" # Change this accordingly
+server="citrisdance" # Change this accordingly
 argnum=$#
 
 if [ $argnum == 0 ]
@@ -37,7 +38,7 @@ else
   fi
 
   echo "$file printing on $printer."
-  `scp $file $username@firedance.soe.ucsc.edu:~/print`
+  `scp $file $username@$server.soe.ucsc.edu:~/print`
 
   ssh $username@firedance.soe.ucsc.edu <<-EOFSSH
     cd print
