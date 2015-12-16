@@ -149,6 +149,7 @@ export EDITOR=vim
 export PATH=~/bin:$PATH
 export ARMA_HOME=~/Libs/armadillo/include
 export OPENBLAS_HOME=~/Libs/OpenBLAS/install_dir/lib
+export LD_LIBRARY_PATH=$OPENBLAS_HOME
 #export JULIA_HOME=~/julia/usr/bin
 #export PATH=$JULIA_HOME:$PATH
 
