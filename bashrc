@@ -147,6 +147,7 @@ PS1="\h:\W$ "
 
 export EDITOR=vim
 export PATH=~/bin:$PATH
+export ARMA_HOME=~/Libs/armadillo
 #export JULIA_HOME=~/julia/usr/bin
 #export PATH=$JULIA_HOME:$PATH
 
