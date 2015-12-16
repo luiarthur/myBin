@@ -148,8 +148,11 @@ PS1="\h:\W$ "
 export EDITOR=vim
 export PATH=~/bin:$PATH
 export ARMA_HOME=~/Libs/armadillo/include
+# OpenBLAS
 export OPENBLAS_HOME=~/Libs/OpenBLAS/install_dir/lib
-export LD_LIBRARY_PATH=$OPENBLAS_HOME
+export LD_LIBRARY_PATH=$OPENBLAS_HOME:$LD_LIBRARY_PATH
+export OPENBLAS_NUM_THREADS=nproc
+# Julia
 #export JULIA_HOME=~/julia/usr/bin
 #export PATH=$JULIA_HOME:$PATH
 
