@@ -22,7 +22,7 @@ Plugin 'JuliaLang/julia-vim'     " Julia
 Plugin 'godlygeek/tabular'       " Auto Indent
 Plugin 'plasticboy/vim-markdown' " Markdown
 Plugin 'octol/vim-cpp-enhanced-highlight' " C++
-"Plugin 'fatih/vim-go'           " Go-lang
+Plugin 'fatih/vim-go'            " Go-lang
 
 " Add this to the syntax file in ~/.vim/bundle/vim-cpp-enhanced-highlight
 "" Arthur RcppArmadillo.
