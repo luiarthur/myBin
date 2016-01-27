@@ -20,6 +20,7 @@ ln -s $currdir/gcal ~/bin/gcal
 ln -s $currdir/gcalbird ~/bin/gcalbird
 ln -s $currdir/ok ~/bin/ok
 ln -s $currdir/editlatex ~/bin/editlatex
+ln -s $currdir/md ~/bin/md
 
 # For use in UCSC
 ln -s $currdir/arrow ~/bin/arrow
