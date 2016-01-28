@@ -10,6 +10,7 @@ rm -f *.tex
 rm -f *.out
 
 # Clean up for converting to jekyll md
+# sed -i 's/old-word/new-word/g' *.txt
 #'<' => '\lt'
 #'>' => '\gt'
 #'_' => '\_'
