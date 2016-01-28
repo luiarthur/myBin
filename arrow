@@ -40,7 +40,7 @@ else
   echo "$file printing on $printer."
   `scp $file $username@$server.soe.ucsc.edu:~/print`
 
-  ssh $username@firedance.soe.ucsc.edu <<-EOFSSH
+  ssh $username@$server.soe.ucsc.edu <<-EOFSSH
     cd print
     lpr -P $printer $paperopts $(basename $file)
 EOFSSH
