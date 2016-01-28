@@ -1,7 +1,9 @@
 #!/bin/bash
 
+server="citrisdance"
+
 echo
-ssh alui2@firedance.soe.ucsc.edu <<EOF
+ssh alui2@$server.soe.ucsc.edu <<EOF
 lpstat -p | grep --color "ink\|coffee\|luck\|becolor"
 EOF
 echo
