@@ -2,9 +2,20 @@
 
 out="universe"
 ext=$1
+numOfArgs=$#
 
-if [ $argnum == 0 ]
+if [ $numOfArgs == 0 ]
 then
-  echo "Enter an extension to minify. e.g. $ minify css"
+  echo
+  echo "Enter an extension to minify. For example: "
+  echo "  $ minify css"
+  echo "to concatenate all css files."
+  echo
 else
+  rm -f $out.$ext
+  cat *.$ext >> tmpuniverse.$ext
+  yui-compressor tmpuniverse.$ext >| $out.$ext
+  rm -f tmpuniverse.$ext
 fi
+
+exit 0
