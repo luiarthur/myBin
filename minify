@@ -1,0 +1,10 @@
+#!/bin/bash
+
+out="universe"
+ext=$1
+
+if [ $argnum == 0 ]
+then
+  echo "Enter an extension to minify. e.g. $ minify css"
+else
+fi
