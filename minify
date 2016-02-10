@@ -1,6 +1,6 @@
 #!/bin/bash
 
-out="universe"
+out="universe.min"
 ext=$1
 numOfArgs=$#
 
