@@ -27,6 +27,7 @@ Plugin 'fatih/vim-go'            " Go-lang
 " For Markdown
 let g:vim_markdown_folding_disabled = 1
 let g:vim_markdown_math = 1
+let g:vim_markdown_frontmatter = 1
 
 " Add this to the syntax file in ~/.vim/bundle/vim-cpp-enhanced-highlight
 "" Arthur RcppArmadillo.
