@@ -183,3 +183,5 @@ export GREP_COLOR='01;38;5;226'
 
 # Python Setup
 export PYTHONSTARTUP=~/.pythonrc
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
