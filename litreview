@@ -1,7 +1,7 @@
 #!/bin/bash
 
 file="$1"
-dest="~/Repo/luiarthur.github.io/assets/litreview"
+dest="/home/arthur/Repo/luiarthur.github.io/assets/litreview"
 
 if [ $# == 0 ]
 then
