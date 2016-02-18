@@ -1,3 +1,16 @@
 #!/bin/bash
 
-cp $1 ~/Repo/luiarthur.github.io/assets/litreview
+file="$1"
+dest="~/Repo/luiarthur.github.io/assets/litreview"
+
+if [ $# == 0 ]
+then
+  echo
+  echo "Enter a file to add to litreview. For example: "
+  echo "  $ litreview myfile.pdf"
+  echo
+else
+  cp $file $dest
+fi
+
+exit 0
