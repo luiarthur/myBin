@@ -140,6 +140,7 @@ alias amazon="ssh -i ~/bin/sonata.pem ubuntu@52.11.22.119"
 alias firedance="ssh -X alui2@firedance.soe.ucsc.edu"
 alias citrisdance="ssh -X alui2@citrisdance.soe.ucsc.edu"
 alias grape="ssh -X alui2@grape.soe.ucsc.edu"
+alias hyades="ssh -X alui2@hyades.ucsc.edu"
 alias bin="cd ~/Repo/myBin"
 
 # Set-up prompt
@@ -183,3 +184,5 @@ export GREP_COLOR='01;38;5;226'
 
 # Python Setup
 export PYTHONSTARTUP=~/.pythonrc
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
