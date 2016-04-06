@@ -6,3 +6,5 @@ plot <- function(...,fg="grey",bty="n",col="grey20",col.lab="grey20",col.axis="g
   }
   dummy1a(...)
 }
+
+options(repos=structure(c(CRAN="http://cran.stat.sfu.ca")))
