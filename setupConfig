@@ -12,6 +12,7 @@ ln -s $currdir/pythonrc ~/.pythonrc
 ln -s $currdir/Rprofile ~/.Rprofile
 
 # Soft link the following to ~/bin:
+mkdir -p ~/bin
 ln -s $currdir/dirsize ~/bin/dirsize
 ln -s $currdir/resources ~/bin/resources
 ln -s $currdir/vulture ~/bin/vulture
@@ -27,4 +28,3 @@ ln -s $currdir/litreview ~/bin/litreview
 # For use in UCSC
 ln -s $currdir/arrow ~/bin/arrow
 ln -s $currdir/printers ~/bin/printers
-
