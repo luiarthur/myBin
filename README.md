@@ -78,6 +78,8 @@ And install:
     - http://arma.sourceforge.net/download.html
     - unpack in home directory
 
+- (OPTIONAL): The `Makevars` file belongs in `~/.R`. This is only used if I want to switch the default g++ compiler. I only use this on servers where I had to install my own version of `gcc`.
+  
 
 Useful Bash Commands to know:
 
