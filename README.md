@@ -77,6 +77,8 @@ And install:
 - Download Armadillo (Linear Algebra Library for C++) from:
     - http://arma.sourceforge.net/download.html
     - unpack in home directory
+    - download openblas from github
+    - install lapack
 
 - (OPTIONAL): The `Makevars` file belongs in `~/.R`. This is only used if I want to switch the default g++ compiler. I only use this on servers where I had to install my own version of `gcc`.
   
