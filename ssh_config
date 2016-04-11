@@ -1,0 +1,17 @@
+#! This file belongs in ~/.ssh/config
+#
+Host hyades
+  HostName hyades.ucsc.edu
+  User alui2
+
+Host firedance
+  HostName firedance.soe.ucsc.edu
+  User alui2
+
+Host citrisdance
+  HostName citrisdance.soe.ucsc.edu
+  User alui2
+
+Host grape
+  HostName grape.soe.ucsc.edu
+  User alui2
