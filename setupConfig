@@ -24,6 +24,7 @@ ln -s $currdir/editlatex ~/bin/editlatex
 ln -s $currdir/md ~/bin/md
 ln -s $currdir/minify ~/bin/minify
 ln -s $currdir/litreview ~/bin/litreview
+ln -s $currdir/comptex ~/bin/comptex
 
 # For use in UCSC
 ln -s $currdir/arrow ~/bin/arrow

@@ -26,6 +26,8 @@ node_modules/
 *.exe
 *.o
 *.so
+*.s
+*.ii
 
 # Packages #
 ############
