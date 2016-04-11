@@ -17,6 +17,7 @@ And install:
 - chrome
 - r-base-core
 - texlive-latex-extra
+    http://tex.stackexchange.com/questions/160878/how-can-i-install-font-t1-from-ecrm1200-using-tex-live-manager-tlmgr
 - ~~Scala~~
     - Download here: http://www.scala-lang.org/download/
     - put in home directory 
