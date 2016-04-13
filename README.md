@@ -99,3 +99,4 @@ Useful Bash Commands to know:
     `$ top`
 - To see Processor Info:
     `$ vi /proc/cpuinfo`
+- `lscpu`
