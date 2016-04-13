@@ -82,6 +82,9 @@ And install:
     - download openblas from github
     - install lapack
 
+- GSL
+  - https://www.youtube.com/watch?v=JrvnJaj7Ogk
+
 - (OPTIONAL): The `Makevars` file belongs in `~/.R`. This is only used if I want to switch the default g++ compiler. I only use this on servers where I had to install my own version of `gcc`.
 - Check out to better understand how to rewrite Makevars `/usr/lib/R/etc/Makeconf` 
  
