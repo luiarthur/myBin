@@ -20,6 +20,7 @@ And install:
     - http://tex.stackexchange.com/questions/160878/how-can-i-install-font-t1-from-ecrm1200-using-tex-live-manager-tlmgr
     - http://askubuntu.com/questions/485514/how-to-properly-install-and-use-texlive-with-package-manager-in-14-04
 - ~~Scala~~
+    - Make sure you have java: `sudo apt-get install default-jdk`
     - Download here: http://www.scala-lang.org/download/
     - put in home directory 
     - install: sbt (http://www.scala-sbt.org/download.html)
