@@ -19,11 +19,13 @@ And install:
 - texlive-latex-extra
     - http://tex.stackexchange.com/questions/160878/how-can-i-install-font-t1-from-ecrm1200-using-tex-live-manager-tlmgr
     - http://askubuntu.com/questions/485514/how-to-properly-install-and-use-texlive-with-package-manager-in-14-04
-- ~~Scala~~
-    - Make sure you have java: `sudo apt-get install default-jdk`
-    - Download here: http://www.scala-lang.org/download/
+- Scala
+    - Make sure you have installed java: `sudo apt-get install default-jdk`
+    - Download Scala here: http://www.scala-lang.org/download/
     - put in home directory 
+    - `jars/jvmr` should be installed in my scala libs. Check for updates? (https://cran.r-project.org/src/contrib/Archive/jvmr/)
     - install: sbt (http://www.scala-sbt.org/download.html)
+        - Or manual install: (http://www.scala-sbt.org/0.13/docs/Manual-Installation.html)
 - numpy (Numeric Python library)
     - `sudo apt-get install python-numpy`
 - Julia
