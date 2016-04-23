@@ -103,3 +103,9 @@ Useful Bash Commands to know:
 - To see Processor Info:
     `$ vi /proc/cpuinfo`
 - `lscpu`
+
+Java:
+  - extract jar (if the fourth argument is not given, all files will be unpacked)
+    - `$ jar xf jar-file-name [files(s)-to-extract]`
+  - compress into jar
+    - `$ jar cf new-jar-file-name files-to-compress
