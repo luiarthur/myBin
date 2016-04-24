@@ -27,7 +27,8 @@ And install:
     - install: sbt (http://www.scala-sbt.org/download.html)
         - Or manual install: (http://www.scala-sbt.org/0.13/docs/Manual-Installation.html)
 - numpy (Numeric Python library)
-    - `sudo apt-get install python-numpy`
+    - ~~`sudo apt-get install python-numpy`~~
+    - `pip install --user numpy` installs to `~./local`. Doesn't require root acces.
 - Julia
     - If installing on a server, just download the [Generic Linux Binaries](http://julialang.org/downloads/)
     - Otherwise, Google: Install Julia. [Github](https://github.com/JuliaLang/julia) has the instructions. 
