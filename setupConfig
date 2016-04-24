@@ -1,31 +1,29 @@
 #!/bin/bash
 
-currdir=`pwd`
-
 # Soft link the following to HOME:
-ln -s $currdir/bashrc ~/.bashrc
-ln -s $currdir/vimrc ~/.vimrc
-ln -s $currdir/vimrc.line-feeder-3 ~/.vimrc.line-feeder-3
-ln -s $currdir/gitignore_global ~/.gitignore_global
-ln -s $currdir/tmux.conf ~/.tmux.conf
-ln -s $currdir/pythonrc ~/.pythonrc
-ln -s $currdir/Rprofile ~/.Rprofile
+cp bashrc ~/.bashrc
+cp vimrc ~/.vimrc
+cp vimrc.line-feeder-3 ~/.vimrc.line-feeder-3
+cp gitignore_global ~/.gitignore_global
+cp tmux.conf ~/.tmux.conf
+cp pythonrc ~/.pythonrc
+cp Rprofile ~/.Rprofile
 
 # Soft link the following to ~/bin:
 mkdir -p ~/bin
-ln -s $currdir/dirsize ~/bin/dirsize
-ln -s $currdir/resources ~/bin/resources
-ln -s $currdir/vulture ~/bin/vulture
-ln -s $currdir/gush ~/bin/gush
-ln -s $currdir/gcal ~/bin/gcal
-ln -s $currdir/gcalbird ~/bin/gcalbird
-ln -s $currdir/ok ~/bin/ok
-ln -s $currdir/editlatex ~/bin/editlatex
-ln -s $currdir/md ~/bin/md
-ln -s $currdir/minify ~/bin/minify
-ln -s $currdir/litreview ~/bin/litreview
-ln -s $currdir/comptex ~/bin/comptex
+ln -s $PWD/dirsize ~/bin/dirsize
+ln -s $PWD/resources ~/bin/resources
+ln -s $PWD/vulture ~/bin/vulture
+ln -s $PWD/gush ~/bin/gush
+ln -s $PWD/gcal ~/bin/gcal
+ln -s $PWD/gcalbird ~/bin/gcalbird
+ln -s $PWD/ok ~/bin/ok
+ln -s $PWD/editlatex ~/bin/editlatex
+ln -s $PWD/md ~/bin/md
+ln -s $PWD/minify ~/bin/minify
+ln -s $PWD/litreview ~/bin/litreview
+ln -s $PWD/comptex ~/bin/comptex
 
 # For use in UCSC
-ln -s $currdir/arrow ~/bin/arrow
-ln -s $currdir/printers ~/bin/printers
+ln -s $PWD/arrow ~/bin/arrow
+ln -s $PWD/printers ~/bin/printers
