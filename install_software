@@ -1,0 +1,37 @@
+# Install matplotlib
+# bash:
+# 
+#     sudo apt-get install python-matplotlib
+
+# Install R
+# bash:
+#   sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9
+#   sudo add-apt-repository -y "deb http://cran.rstudio.com/bin/linux/ubuntu $(lsb_release -s -c)/"
+#   sudo apt-get update -y
+#   sudo apt-get install -y r-base r-base-dev
+
+# Install Julia
+# Download binaries and add bin directory to search path
+# http://julialang.org/downloads/
+
+# Install RCall, PyPLot, Gadfly for Julia
+# julia
+#    Pkg.add("Gadfly")
+#    Pkg.add("PyPlot")
+#    Pkg.add("RCall")
+#    using Gadfly, PyPlot, RCall
+
+# Install jupyter through julia IJulia.jl
+# Pkg.add("IJulia")
+# using IJulia
+#
+# Then add the binary path to bashrc to launch jupyter from terminal with: jupyter notebook
+# using Conda; Conda.SRIPTDIR
+
+# Installing jupyter-vim-bindings
+# https://github.com/lambdalisue/jupyter-vim-binding
+#
+#     mkdir -p $(jupyter --data-dir)/nbextensions
+#     cd $(jupyter --data-dir)/nbextensions
+#     git clone https://github.com/lambdalisue/jupyter-vim-binding vim_binding
+#     jupyter nbextension enable vim_binding/vim_binding
