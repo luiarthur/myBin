@@ -79,6 +79,10 @@
 # gadfly()
 
 
-# Install: 
-# Pkg.add("ImageMagick")
+# I've decided. For Julia Plotting: Gadfly + PlotlyJS
+# Install PlotlyJS: 
+# https://github.com/spencerlyon2/PlotlyJS.jl
+# Pkg.add("ImageMagick") # for saving graphs
 # Pkg.add("PlotlyJS")
+# using Blink; Blink.AtomShell.install()
+# using PlotlyJS, ImageMagick
