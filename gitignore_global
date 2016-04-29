@@ -49,6 +49,7 @@ dump.rdb
 *.log
 *.sql
 *.sqlite
+.ipynb_checkpoints/
 
 # OS generated files #
 ######################
