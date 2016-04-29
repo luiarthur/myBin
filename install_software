@@ -69,3 +69,11 @@
 # then to precompile,
 #
 # using Proj4, DBaseReader, ChoropletMaps
+
+# Install Plots.jl, a good front end API for plotting
+# http://plots.readthedocs.io/en/latest/
+# use something else for backend (Gadfly)
+#
+# Pkg.add("Plots")
+# using Plots
+# gadfly()
