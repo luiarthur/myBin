@@ -47,3 +47,12 @@
 #
 # To install the theme: (e.g. oceans16)
 # jupyter-theme -t oceans16
+#
+# add to ~/.jupyter/custom/custom.css
+# /* Arthur Lui */
+# pre.CodeMirror-line {
+#   background: #363D44 !important;
+# }
+# .edit_mode .selected .CodeMirror-lines {
+#   background: #363D44 !important;
+# }
