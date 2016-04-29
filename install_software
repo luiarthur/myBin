@@ -77,3 +77,8 @@
 # Pkg.add("Plots")
 # using Plots
 # gadfly()
+
+
+# Install: 
+# Pkg.add("ImageMagick")
+# Pkg.add("PlotlyJS")
