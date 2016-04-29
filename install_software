@@ -53,3 +53,19 @@
 # .selected .CodeMirror-lines {
 #   background: #363D44 !important;
 # }
+
+# Install ChoroplethMaps.jl 
+# https://github.com/penntaylor/ChoroplethMaps.jl
+# Follow the instructions there:
+#
+# Pkg.clone("https://github.com/FugroRoames/Proj4.jl.git")
+# Pkg.clone("https://github.com/penntaylor/DBaseReader.jl.git")
+# Pkg.clone("https://github.com/penntaylor/ChoroplethMaps.jl.git")
+#
+# Afterwards,
+#
+# Pkg.build("Proj4")
+#
+# then to precompile,
+#
+# using Proj4, DBaseReader, ChoropletMaps
