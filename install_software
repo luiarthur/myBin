@@ -53,6 +53,10 @@
 # .selected .CodeMirror-lines {
 #   background: #363D44;  /*!important;*/
 # }
+#
+# Replace the following line with the second line (for visual highlight)
+#.cm-s-ipython div.CodeMirror-selected {background: #D4DDEC !important;}
+#.cm-s-ipython div.CodeMirror-selected {background: #184A7B !important;}
 
 # Install ChoroplethMaps.jl 
 # https://github.com/penntaylor/ChoroplethMaps.jl
