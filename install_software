@@ -40,7 +40,7 @@
 # https://github.com/dunovank/jupyter-themes
 #
 # pip install --user git+https://github.com/dunovank/jupyter-themes.git
-# ln -s ~/.local/bin/jupyter-themes ~/bin
+# ln -s ~/.local/bin/jupyter-theme ~/bin
 #
 # TO see what themes are available:
 # jupyter-theme -l
