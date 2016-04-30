@@ -107,5 +107,5 @@
 #        ijulia_setdevice(MIME"image/svg+xml"())
 #    end
 #
-#Then, in RCall.jl, add ijulia_init(), to the exports. Remember
+#Then, in RCall.jl, add ijulia_init, to the exports. Remember
 #the commas.
