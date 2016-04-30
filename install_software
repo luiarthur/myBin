@@ -51,7 +51,7 @@
 # add to ~/.jupyter/custom/custom.css
 # /* Arthur Lui */
 # .selected .CodeMirror-lines {
-#   background: #363D44 !important;
+#   background: #363D44;  /*!important;*/
 # }
 
 # Install ChoroplethMaps.jl 
