@@ -65,14 +65,20 @@
 # Pkg.clone("https://github.com/FugroRoames/Proj4.jl.git")
 # Pkg.clone("https://github.com/penntaylor/DBaseReader.jl.git")
 # Pkg.clone("https://github.com/penntaylor/ChoroplethMaps.jl.git")
-#
-# Afterwards,
-#
+# Pkg.add("ZipFile")
+# Pkg.update()
 # Pkg.build("Proj4")
 #
-# then to precompile,
+# For some reason, can't use their choroplethmap function. But can call 
+# from Gadfly. Must be a missing dependency.
 #
-# using Proj4, DBaseReader, ChoropletMaps
+# using ChoroplethMaps, DataFrames, Gadfly
+# df = DataFrame(NAME=["Alabama", "Arkansas", "Louisiana", "Mississippi", "Tennessee"], PCT=[26.6673430422, 15.6204437142, 32.4899197277, 37.5052896066, 17.0874767458] )
+# 
+# plot(mapify(df, Provider.STATESUMMARY(), key=:NAME),
+#      x=:CM_X, y=:CM_Y, group=:NAME, color=:PCT,
+#      Geom.polygon(preserve_order=true, fill=true),
+#      Coord.cartesian(fixed=true))
 
 # Install Plots.jl, a good front end API for plotting
 # http://plots.readthedocs.io/en/latest/
