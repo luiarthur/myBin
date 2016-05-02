@@ -94,7 +94,7 @@
 # https://github.com/spencerlyon2/PlotlyJS.jl
 # Pkg.add("PlotlyJS")
 # Pkg.add("Rsvg") # for saving plots as pdf, png, etc.
-# using Blink; Blink.AtomShell.install()
+# using Blink; Blink.AtomShell.install() # for opening graphics window
 #
 # # Additional things to add in the OLD WAY:
 # #Pkg.add("ImageMagick") # for saving graphs
