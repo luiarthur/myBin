@@ -70,7 +70,7 @@
 # Pkg.build("Proj4")
 #
 # For some reason, can't use their choroplethmap function. But can call 
-# from Gadfly. Must be a missing dependency.
+# from Gadfly. Must be a missing dependency. Maybe Compose?
 #
 # using ChoroplethMaps, DataFrames, Gadfly
 # df = DataFrame(NAME=["Alabama", "Arkansas", "Louisiana", "Mississippi", "Tennessee"], PCT=[26.6673430422, 15.6204437142, 32.4899197277, 37.5052896066, 17.0874767458] )
@@ -96,6 +96,11 @@
 # Pkg.add("PlotlyJS")
 # using Blink; Blink.AtomShell.install()
 # using PlotlyJS, ImageMagick
+# Pkg.add("Rsvg") # for saving plots as pdf, png, etc.
+#
+# Notes:
+# savefig(myplot, "output_filename.html") # to save as html
+# PlotlyJS.savefig2(myplot, "output_filename.pdf") # to save as pdf. Uses Rsvg.
 
 # To change R plot size in jupyter, go to 
 # ~/.julia/v0.4/RCall/src
