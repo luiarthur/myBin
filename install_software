@@ -92,11 +92,13 @@
 # I've decided. For Julia Plotting: Gadfly + PlotlyJS
 # Install PlotlyJS: 
 # https://github.com/spencerlyon2/PlotlyJS.jl
-# Pkg.add("ImageMagick") # for saving graphs
 # Pkg.add("PlotlyJS")
-# using Blink; Blink.AtomShell.install()
-# using PlotlyJS, ImageMagick
 # Pkg.add("Rsvg") # for saving plots as pdf, png, etc.
+# using Blink; Blink.AtomShell.install()
+#
+# # Additional things to add in the OLD WAY:
+# #Pkg.add("ImageMagick") # for saving graphs
+# #using PlotlyJS, ImageMagick
 #
 # Notes:
 # savefig(myplot, "output_filename.html") # to save as html
