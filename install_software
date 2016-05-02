@@ -101,6 +101,21 @@
 # Notes:
 # savefig(myplot, "output_filename.html") # to save as html
 # PlotlyJS.savefig3(myplot, "output_filename.pdf") # to save as pdf. Uses Rsvg.
+#
+# Example: 
+# using PlotlyJS, Rsvg
+# 
+# t1 = scatter(;x=[1, 2, 3, 4, 5], y=[1, 6, 3, 6, 1])
+#
+# # Prints to a device in a live Julia session
+# # Does not print if running Julia in BATCH mode 
+# # from terminal.
+# p = plot(t1)
+#
+# # Saves as a pdf:
+# PlotlyJS.savefig3(PlotlyJS.SyncPlot(p), "p.pdf")
+
+
 
 # To change R plot size in jupyter, go to 
 # ~/.julia/v0.4/RCall/src
