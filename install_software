@@ -100,7 +100,7 @@
 #
 # Notes:
 # savefig(myplot, "output_filename.html") # to save as html
-# PlotlyJS.savefig2(myplot, "output_filename.pdf") # to save as pdf. Uses Rsvg.
+# PlotlyJS.savefig3(myplot, "output_filename.pdf") # to save as pdf. Uses Rsvg.
 
 # To change R plot size in jupyter, go to 
 # ~/.julia/v0.4/RCall/src
