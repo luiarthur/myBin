@@ -50,11 +50,16 @@
 #
 # add to ~/.jupyter/custom/custom.css
 # /* Arthur Lui */
-# .selected .CodeMirror-lines {background: #363D44;}
-#
-# Replace the following line with the second line (for visual highlight)
-#.cm-s-ipython div.CodeMirror-selected {background: #D4DDEC !important;}
+#/* Arthur Lui */
+#/*background for code*/
+#.CodeMirror-lines {background: #363D44;}
+#/*highlighter*/
 #.cm-s-ipython div.CodeMirror-selected {background: #184A7B !important;}
+#/*unrendered markdown*/
+#.text_cell.unrendered pre { background: rgba(0, 32, 34, 0.68); }
+#.text_cell.unrendered .CodeMirror-selected { background: rgb(51, 236, 249); }
+#.cm-s-default { color: white; }
+#.cm-s-default .cm-header { color: rgb(253, 231, 143); }
 
 # Install ChoroplethMaps.jl 
 # https://github.com/penntaylor/ChoroplethMaps.jl
