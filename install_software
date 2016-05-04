@@ -50,9 +50,7 @@
 #
 # add to ~/.jupyter/custom/custom.css
 # /* Arthur Lui */
-# .selected .CodeMirror-lines {
-#   background: #363D44;  /*!important;*/
-# }
+# .selected .CodeMirror-lines {background: #363D44;}
 #
 # Replace the following line with the second line (for visual highlight)
 #.cm-s-ipython div.CodeMirror-selected {background: #D4DDEC !important;}
