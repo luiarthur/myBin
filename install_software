@@ -49,7 +49,6 @@
 # jupyter-theme -t oceans16
 #
 # add to ~/.jupyter/custom/custom.css
-# /* Arthur Lui */
 #/* Arthur Lui */
 #/*background for code*/
 #.CodeMirror-lines {background: #363D44;}
