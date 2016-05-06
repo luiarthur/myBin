@@ -24,6 +24,8 @@ function! LineFeederSetUp()
     let cmd = "nice R"
   elseif ext == "rb"
     let cmd = "irb"
+  elseif ext == "jl"
+    let cmd = "julia"
   elseif ext == "scala"
     let cmd = "scala"
   elseif ext == "py"
