@@ -45,3 +45,8 @@ nnoremap <silent> <C-j> :call LineFeederNextLine()<cr>
 nnoremap <silent> <C-l> :call LineFeederSideLine()<cr>
 nnoremap <silent> <C-h> :%call LineFeederNextLine()<cr>
 
+" Arthur Lui
+function! LineFeederChunk()
+  call LineFeederNextLine()
+endfunction
+vmap <silent> <C-S-j> :call LineFeederChunk()<CR>
