@@ -26,6 +26,7 @@ And install:
     - `jars/jvmr` should be installed in my scala libs. Check for updates? (https://cran.r-project.org/src/contrib/Archive/jvmr/)
     - install: sbt (http://www.scala-sbt.org/download.html)
         - Or manual install: (http://www.scala-sbt.org/0.13/docs/Manual-Installation.html)
+    - Note that when sbt adds a new package (e.g. breeze), it stores the jars in `~/.ivy2`.
 - numpy (Numeric Python library)
     - ~~`sudo apt-get install python-numpy`~~
     - `pip install --user numpy` installs to `~./local`. Doesn't require root acces.
