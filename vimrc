@@ -126,7 +126,9 @@ noremap <F8> :%!xxd<CR>
 noremap <F7> :%!xxd -r<CR>
 
 " Copy and paste between sessions
-" vmap <C-S-y> :w! ~/.vbuf<CR>     " Dahl: copy the current visual selection to ~/.vbuf
+" Dahl copy the current visual selection to ~/.vbuf
+" vmap <C-S-y> :w! ~/.vbuf<CR>
+
 vmap <C-S-u> :w! xsel<CR> " copy the current visual selection to X11 clipboard using "xsel"
 vmap <C-S-y> "+y<CR>      " copy the current visual selection to ~/.vbuf
 nmap <C-S-p> "+p<CR>      " paste the contents of the buffer file
