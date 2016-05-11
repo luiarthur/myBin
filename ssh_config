@@ -16,6 +16,5 @@ Host grape
   HostName grape.soe.ucsc.edu
   User alui2
 
-# cat ~/.ssh/id_rsa.pub | ssh alui2@hyades.ucsc.edu 'cat >> authorized_keys'
-# cat ~/.ssh/id_rsa.pub | ssh alui2@grape.soe.ucsc.edu 'cat >> authorized_keys'
-# cat ~/.ssh/id_rsa.pub | ssh alui2@citrisdance.soe.ucsc.edu 'cat >> authorized_keys'
+#cat ~/.ssh/id_rsa.pub | ssh alui2@hyades.ucsc.edu 'cat >> ~/.ssh/authorized_keys2'
+#cat ~/.ssh/id_rsa.pub | ssh alui2@citrisdance.soe.ucsc.edu 'cat >> ~/.ssh/authorized_keys'
