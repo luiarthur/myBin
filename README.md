@@ -111,4 +111,17 @@ Java:
   - extract jar (if the fourth argument is not given, all files will be unpacked)
     - `$ jar xf jar-file-name [files(s)-to-extract]`
   - compress into jar
-    - `$ jar cf new-jar-file-name files-to-compress
+    - `$ jar cf new-jar-file-name files-to-compress`
+
+# Add this to `~/.config/user-dirs.dirs`
+> # New Default Settings by Arthur Lui
+> XDG_DESKTOP_DIR="$HOME/Desktop"
+> XDG_DOWNLOAD_DIR="$HOME/Downloads"
+> XDG_TEMPLATES_DIR="$HOME/Downloads/Templates"
+> XDG_PUBLICSHARE_DIR="$HOME/Downloads/Public"
+> XDG_DOCUMENTS_DIR="$HOME/Downloads/Documents"
+> XDG_MUSIC_DIR="$HOME/Downloads/Music"
+> XDG_PICTURES_DIR="$HOME/Downloads/Pictures"
+> XDG_VIDEOS_DIR="$HOME/Downloads/Videos"
+
+
