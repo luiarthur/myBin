@@ -114,12 +114,10 @@ Useful Bash Commands to know:
     - `$ jar cf new-jar-file-name files-to-compress`
 
 - Add this to `~/.config/user-dirs.dirs`
-> # New Default Settings by Arthur Lui
-> XDG_DESKTOP_DIR="$HOME/Desktop"
-> XDG_DOWNLOAD_DIR="$HOME/Downloads"
-> XDG_TEMPLATES_DIR="$HOME/Downloads"
-> XDG_PUBLICSHARE_DIR="$HOME/Downloads"
-> XDG_DOCUMENTS_DIR="$HOME/Downloads"
-> XDG_MUSIC_DIR="$HOME/Downloads/Music"
-> XDG_PICTURES_DIR="$HOME/Downloads/Pictures"
-> XDG_VIDEOS_DIR="$HOME/Downloads/Videos"
+> XDG_DESKTOP_DIR="$HOME/Desktop"  
+> XDG_DOWNLOAD_DIR="$HOME/Downloads"  
+> XDG_TEMPLATES_DIR="$HOME/Downloads"  
+> XDG_PUBLICSHARE_DIR="$HOME/Downloads"  
+> XDG_DOCUMENTS_DIR="$HOME/Downloads"  
+> XDG_PICTURES_DIR="$HOME/Downloads/Pictures"  
+> XDG_VIDEOS_DIR="$HOME/Downloads/Videos"  
