@@ -107,13 +107,13 @@ Useful Bash Commands to know:
     `$ vi /proc/cpuinfo`
 - `lscpu`
 
-Java:
+- Java:
   - extract jar (if the fourth argument is not given, all files will be unpacked)
     - `$ jar xf jar-file-name [files(s)-to-extract]`
   - compress into jar
     - `$ jar cf new-jar-file-name files-to-compress`
 
-# Add this to `~/.config/user-dirs.dirs`
+- Add this to `~/.config/user-dirs.dirs`
 > # New Default Settings by Arthur Lui
 > XDG_DESKTOP_DIR="$HOME/Desktop"
 > XDG_DOWNLOAD_DIR="$HOME/Downloads"
