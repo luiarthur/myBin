@@ -1,11 +1,13 @@
 #!/bin/bash
 
-# Soft link the following to HOME:
-cp bashrc ~/.bashrc
+# Copy the following to HOME:
+cp tmux.conf ~/.tmux.conf
 cp vimrc ~/.vimrc
 cp vimrc.line-feeder-3 ~/.vimrc.line-feeder-3
+
+cp bashrc ~/.bashrc
+cp gitconfig ~/.gitconfig
 cp gitignore_global ~/.gitignore_global
-cp tmux.conf ~/.tmux.conf
 cp pythonrc ~/.pythonrc
 cp Rprofile ~/.Rprofile
 
