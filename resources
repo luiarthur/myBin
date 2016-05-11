@@ -14,5 +14,6 @@ uptime
 
 echo 
 df -h | head -2 | sed "s/^/  /"
+#df -h | sed -n '4p' | sed "s/^/  /"
 
 echo
