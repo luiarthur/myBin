@@ -26,7 +26,11 @@
 # using IJulia
 #
 # Then add the binary path to bashrc to launch jupyter from terminal with: jupyter notebook
-# using Conda; Conda.SRIPTDIR
+#import Conda
+#x = Conda.SCRIPTDIR
+#;echo "" >> ~/.bashrc
+#;echo "# Making Jupyter path searchable" >> ~/.bashrc
+#;echo "export PATH=$x:\$PATH" >> ~/.bashrc
 
 # Installing jupyter-vim-bindings
 # https://github.com/lambdalisue/jupyter-vim-binding
