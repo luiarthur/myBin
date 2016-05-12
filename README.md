@@ -7,7 +7,10 @@ These files go into ~/bin:
 All other files go into ~/
 
 Also, install latex [see this also](http://tex.stackexchange.com/questions/106113/is-there-any-way-to-have-a-latex-compiler-on-a-mac-without-root-access):
-> sudo apt-get install texlive
+> sudo apt-get install texlive-latex-base
+
+There are other latex packages (extra, recommended, etc.)
+But that's too much bulk for me...
 
 And install:
 - git
@@ -16,7 +19,7 @@ And install:
 - tmux (use `tmux_install.sh` if no root access. Sourced from https://gist.github.com/luiarthur/2825d04d80555a208047)
 - chrome
 - r-base-core
-- texlive-latex-extra
+- texlive-latex-base
     - http://tex.stackexchange.com/questions/160878/how-can-i-install-font-t1-from-ecrm1200-using-tex-live-manager-tlmgr
     - http://askubuntu.com/questions/485514/how-to-properly-install-and-use-texlive-with-package-manager-in-14-04
 - Scala
