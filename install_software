@@ -26,7 +26,11 @@
 # using IJulia
 #
 # Then add the binary path to bashrc to launch jupyter from terminal with: jupyter notebook
-# using Conda; Conda.SRIPTDIR
+#import Conda
+#x = Conda.SCRIPTDIR
+#;echo "" >> ~/.bashrc
+#;echo "# Making Jupyter path searchable" >> ~/.bashrc
+#;echo "export PATH=$x:\$PATH" >> ~/.bashrc
 
 # Installing jupyter-vim-bindings
 # https://github.com/lambdalisue/jupyter-vim-binding
@@ -48,7 +52,8 @@
 # To install the theme: (e.g. oceans16)
 # jupyter-theme -t oceans16
 #
-# add to ~/.jupyter/custom/custom.css
+# # Execute this to add customization to ~/.jupyter/custom/custom.css
+#cat  >> ~/.jupyter/custom/custom.css << EOF
 #/* Arthur Lui */
 #/*background for code*/
 #.CodeMirror-lines {background: #363D44;}
@@ -59,6 +64,7 @@
 #.text_cell.unrendered .CodeMirror-selected { background: rgb(51, 236, 249); }
 #.cm-s-default { color: white; }
 #.cm-s-default .cm-header { color: rgb(253, 231, 143); }
+#EOF
 
 # Install ChoroplethMaps.jl 
 # https://github.com/penntaylor/ChoroplethMaps.jl
@@ -143,3 +149,4 @@
 #
 #Then, in RCall.jl, add ijulia_init, to the exports. Remember
 #the commas.
+

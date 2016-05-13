@@ -7,7 +7,7 @@ These files go into ~/bin:
 All other files go into ~/
 
 Also, install latex [see this also](http://tex.stackexchange.com/questions/106113/is-there-any-way-to-have-a-latex-compiler-on-a-mac-without-root-access):
-> sudo apt-get install texlive
+> sudo apt-get install texlive-science
 
 And install:
 - git
@@ -16,7 +16,7 @@ And install:
 - tmux (use `tmux_install.sh` if no root access. Sourced from https://gist.github.com/luiarthur/2825d04d80555a208047)
 - chrome
 - r-base-core
-- texlive-latex-extra
+- (texlive-latex-base is lightweight)
     - http://tex.stackexchange.com/questions/160878/how-can-i-install-font-t1-from-ecrm1200-using-tex-live-manager-tlmgr
     - http://askubuntu.com/questions/485514/how-to-properly-install-and-use-texlive-with-package-manager-in-14-04
 - Scala
@@ -107,8 +107,17 @@ Useful Bash Commands to know:
     `$ vi /proc/cpuinfo`
 - `lscpu`
 
-Java:
+- Java:
   - extract jar (if the fourth argument is not given, all files will be unpacked)
     - `$ jar xf jar-file-name [files(s)-to-extract]`
   - compress into jar
-    - `$ jar cf new-jar-file-name files-to-compress
+    - `$ jar cf new-jar-file-name files-to-compress`
+
+- Add this to `~/.config/user-dirs.dirs`
+> XDG_DESKTOP_DIR="$HOME/Desktop"  
+> XDG_DOWNLOAD_DIR="$HOME/Downloads"  
+> XDG_TEMPLATES_DIR="$HOME/Downloads"  
+> XDG_PUBLICSHARE_DIR="$HOME/Downloads"  
+> XDG_DOCUMENTS_DIR="$HOME/Downloads"  
+> XDG_PICTURES_DIR="$HOME/Downloads/Pictures"  
+> XDG_VIDEOS_DIR="$HOME/Downloads/Videos"  
