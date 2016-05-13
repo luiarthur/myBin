@@ -5,6 +5,6 @@ git commit -m 'yes'
 git push
 echo
 
-ORANGE='\033[0;33m;'
+ORANGE='\033[0;33m'
 NC='\033[0m' # No Color
 printf "${ORANGE}$date${NC}"
