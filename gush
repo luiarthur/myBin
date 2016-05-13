@@ -3,7 +3,6 @@
 git add .
 git commit -m 'yes'
 git push
-echo
 
 ORANGE='\033[0;33m'
 NC='\033[0m' # No Color
