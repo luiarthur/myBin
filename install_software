@@ -64,6 +64,9 @@
 #.text_cell.unrendered .CodeMirror-selected { background: rgb(51, 236, 249); }
 #.cm-s-default { color: white; }
 #.cm-s-default .cm-header { color: rgb(253, 231, 143); }
+#.cm-s-default .cm-variable-2 {color: #B0B9C1}
+#.cm-s-default .cm-link {color: #67CC00}
+#a:hover, a:focus {color: #A1D490}
 #EOF
 
 # Install ChoroplethMaps.jl 
