@@ -18,11 +18,11 @@ cp gitconfig ~/.gitconfig
 cp gitignore_global ~/.gitignore_global
 cp pythonrc ~/.pythonrc
 cp Rprofile ~/.Rprofile
+cp resources ~/bin/resources
 
 # Soft link the following to ~/bin:
 mkdir -p ~/bin
 ln -s $PWD/dirsize ~/bin/dirsize
-ln -s $PWD/resources ~/bin/resources
 ln -s $PWD/vulture ~/bin/vulture
 ln -s $PWD/gush ~/bin/gush
 ln -s $PWD/gcal ~/bin/gcal
