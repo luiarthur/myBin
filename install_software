@@ -160,6 +160,10 @@
 # $ conda install -c r r-essentials
 
 # After Upgrading to Ubuntu 16.04 LTS
+# install openjdk-7-jdk (instead of 8) see the following
+# http://ubuntuhandbook.org/index.php/2015/01/install-openjdk-8-ubuntu-14-04-12-04-lts/
+# 
+#
 # my OpenBLAS needed to be reinstalled and recompiled. 
 # The warning in sbt (scala) was:
 # > WARN BLAS: Failed to load implementation from: com.github.fommil.netlib.NativeSystemBLAS
