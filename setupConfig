@@ -1,5 +1,14 @@
 #!/bin/bash
 
+
+#sudo apt-get install tmux
+#sudo apt-get install vim-gnome
+#mkdir -p ~/Repo
+#sudo apt-get install git
+#git clone https://github.com/luiarthur/myBin ~/Repo
+#git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+
 # Copy the following to HOME:
 cp tmux.conf ~/.tmux.conf
 cp vimrc ~/.vimrc
