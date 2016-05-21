@@ -166,12 +166,13 @@
 # > WARN BLAS: Failed to load implementation from: com.github.fommil.netlib.NativeRefBLAS
 # > WARN LAPACK: Failed to load implementation from: com.github.fommil.netlib.NativeSystemLAPACK
 # > WARN LAPACK: Failed to load implementation from: com.github.fommil.netlib.NativeRefLAPACK
-# $ sudo apt-get remove libopenblas-base
-# $ mkdir tmpOB
-# $ cd tmpOB
-# $ git clone git://github.com/xianyi/OpenBLAS
-# cd OpenBLAS
-# make FC=gfortran
-# sudo make install PREFIX=/path/to/OpenBLAS
-# cd ..
-# # rm -rf tmpOB
+# $ sudo apt-get install libopenblas-base (recommended)
+# OR (https://github.com/fommil/netlib-java) figure out how to link 
+#   $ mkdir tmpOB
+#   $ cd tmpOB
+#   $ git clone git://github.com/xianyi/OpenBLAS
+#   cd OpenBLAS
+#   make FC=gfortran
+#   sudo make install PREFIX=/path/to/OpenBLAS
+#   cd ..
+#   # rm -rf tmpOB
