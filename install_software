@@ -160,7 +160,12 @@
 # $ conda install -c r r-essentials
 
 # After Upgrading to Ubuntu 16.04 LTS
-# my OpenBLAS needed to be reinstalled and recompiled
+# my OpenBLAS needed to be reinstalled and recompiled. 
+# The warning in sbt (scala) was:
+# > WARN BLAS: Failed to load implementation from: com.github.fommil.netlib.NativeSystemBLAS
+# > WARN BLAS: Failed to load implementation from: com.github.fommil.netlib.NativeRefBLAS
+# > WARN LAPACK: Failed to load implementation from: com.github.fommil.netlib.NativeSystemLAPACK
+# > WARN LAPACK: Failed to load implementation from: com.github.fommil.netlib.NativeRefLAPACK
 # $ sudo apt-get remove libopenblas-base
 # $ mkdir tmpOB
 # $ cd tmpOB
