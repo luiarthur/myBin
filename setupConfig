@@ -19,6 +19,7 @@ cp gitconfig ~/.gitconfig
 cp gitignore_global ~/.gitignore_global
 cp pythonrc ~/.pythonrc
 cp Rprofile ~/.Rprofile
+cp Renviron ~/.Renviron
 cp resources ~/bin/resources
 cp ssh_config ~/.ssh/config
 
