@@ -129,60 +129,48 @@ alias dir="ls -hla "
 alias taro="tar -zxvf"
 alias tma="tmux attach -t"
 alias s="aspell --lang=en_GB -t -c"
-# Personal (BYU)
-alias 536="cd ~/School/Winter2014/Stat536/Homework"
-alias 538="cd ~/School/Winter2014/Stat538/Final"
-alias 642="cd ~/School/Winter2014/Stat642/Homework"
-alias 651="cd ~/School/Fall2014/Stat651"
-alias 666="cd ~/School/Fall2014/Stat666"
+
+# Personal
 alias amazon="ssh -i ~/bin/sonata.pem ubuntu@52.11.22.119"
-# UCSC
-alias firedance="ssh -X alui2@firedance.soe.ucsc.edu"
-alias citrisdance="ssh -X alui2@citrisdance.soe.ucsc.edu"
-alias grape="ssh -X alui2@grape.soe.ucsc.edu"
-alias hyades="ssh -X alui2@hyades.ucsc.edu"
-alias bin="cd ~/Repo/myBin"
 
 # Set-up prompt
 PS1="\h:\W$ "
-
+# Basic
 export EDITOR=vim
 export PATH=~/bin:$PATH
-export ARMA_HOME=~/Libs/armadillo/include
-# OpenBLAS
-export OPENBLAS_HOME=~/Libs/OpenBLAS/install_dir/lib
-export LD_LIBRARY_PATH=$OPENBLAS_HOME:$LD_LIBRARY_PATH
-export OPENBLAS_NUM_THREADS=nproc
+
 # Julia
-#export JULIA_HOME=~/julia/usr/bin
+#export JULIA_HOME=~/programs/julia-0.4.5/usr/bin
 #export PATH=$JULIA_HOME:$PATH
 
+# Scala
+#export SCALA_HOME=$HOME/programs/scala-2.11.8
+#export PATH=$PATH:$SCALA_HOME/bin
+
+# Python Setup
+#export PYTHONSTARTUP=~/.pythonrc
+
+# Ruby Version Management
+#export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+# Armadillo
+#export ARMA_HOME=~/Libs/armadillo/include
+
+# OpenBLAS
+#export OPENBLAS_HOME=~/lib/OpenBLAS/lib
+#export OPENBLAS_include=~/lib/OpenBLAS/include
+#export LD_LIBRARY_PATH=$OPENBLAS_HOME:$LD_LIBRARY_PATH
+#export OPENBLAS_NUM_THREADS=nproc
 
 # Go
 #export GOROOT=~/go # Creating a variable for the go path
 #export PATH=$GOROOT/bin:$PATH # For using go
 
-# Scala
-#export PATH=~/bin/sbt/bin:$PATH # sbt is a building tool for scala.
-# To get scala, download the package from:
-#   http://www.scala-lang.org/download/
-# And follow the instructions in:
-#   http://www.scala-lang.org/download/install.html
-#SCALA_HOME=$HOME/scala-2.11.6
-#export SCALA_HOME
-#PATH=$PATH:$SCALA_HOME/bin
-#export PATH
-
 # gcalcli:
-alias gcalqa="gcalcli quick --calendar='Personal' --duration 0"
-alias gcaladd="gcalcli add --calendar='Personal'"
-alias gcalrm="gcalcli delete"
-alias gcalls="gcalcli list"
-alias gcalw="gcalcli calw"
-alias gcaledit="gcalcli edit"
-export GREP_COLOR='01;38;5;226'
-
-# Python Setup
-export PYTHONSTARTUP=~/.pythonrc
-
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+#alias gcalqa="gcalcli quick --calendar='Personal' --duration 0"
+#alias gcaladd="gcalcli add --calendar='Personal'"
+#alias gcalrm="gcalcli delete"
+#alias gcalls="gcalcli list"
+#alias gcalw="gcalcli calw"
+#alias gcaledit="gcalcli edit"
+#export GREP_COLOR='01;38;5;226'
