@@ -9,6 +9,7 @@
 
 
 # Copy the following to HOME:
+mkdir -p ~/bin
 cp tmux.conf ~/.tmux.conf
 cp vimrc ~/.vimrc
 cp vimrc.line-feeder-3 ~/.vimrc.line-feeder-3
@@ -21,7 +22,6 @@ cp Rprofile ~/.Rprofile
 cp resources ~/bin/resources
 
 # Soft link the following to ~/bin:
-mkdir -p ~/bin
 ln -s $PWD/dirsize ~/bin/dirsize
 ln -s $PWD/vulture ~/bin/vulture
 ln -s $PWD/gush ~/bin/gush
