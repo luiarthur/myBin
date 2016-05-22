@@ -20,6 +20,7 @@ cp gitignore_global ~/.gitignore_global
 cp pythonrc ~/.pythonrc
 cp Rprofile ~/.Rprofile
 cp resources ~/bin/resources
+cp ssh_config ~/.ssh/config
 
 # Soft link the following to ~/bin:
 ln -s $PWD/dirsize ~/bin/dirsize
@@ -37,7 +38,6 @@ ln -s $PWD/comptex ~/bin/comptex
 # For use in UCSC
 ln -s $PWD/arrow ~/bin/arrow
 ln -s $PWD/printers ~/bin/printers
-cp ssh_config ~/.ssh/config
 
 # git clones:
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
