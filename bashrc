@@ -140,7 +140,7 @@ export EDITOR=vim
 export PATH=~/bin:$PATH
 
 # Julia
-#export JULIA_HOME=~/programs/julia-0.4.5/usr/bin
+#export JULIA_HOME=~/programs/julia-0.4.5/bin
 #export PATH=$JULIA_HOME:$PATH
 
 # Scala
