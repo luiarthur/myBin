@@ -24,7 +24,7 @@ And install:
         - Note that java version x <=> jdk 1.x._
         - In Ubuntu 14.04 LTS, openjdk-7-jdk refers to 1.7.0_101 by default
         - `sudo apt-get install openjdk-7-jdk`
-        - In Ubuntu 16.04 LTS, as of this time, java 7 is not available
+        - In Ubuntu 16.04 LTS, as of this time, java 7 is not available by default. Java 8 is the default. But I have problems using scala-breeze with java 8. So I reverted to Ubuntu 14.04. Lesson learned. Wait a year or two to install the newest LTS for Ubuntu.
     - Download Scala here: http://www.scala-lang.org/download/
     - put in home directory 
     - `jars/jvmr` should be installed in my scala libs. Check for updates? (https://cran.r-project.org/src/contrib/Archive/jvmr/)
