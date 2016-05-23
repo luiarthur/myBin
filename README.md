@@ -20,7 +20,11 @@ And install:
     - http://tex.stackexchange.com/questions/160878/how-can-i-install-font-t1-from-ecrm1200-using-tex-live-manager-tlmgr
     - http://askubuntu.com/questions/485514/how-to-properly-install-and-use-texlive-with-package-manager-in-14-04
 - Scala
-    - Make sure you have installed java: ~~`sudo apt-get install default-jdk`~~ `sudo apt-get install openjdk-7-jdk`
+    - Make sure you have installed java: 
+        - Note that java version x <=> jdk 1.x._
+        - In Ubuntu 14.04 LTS, openjdk-7-jdk refers to 1.7.0_101 by default
+        - `sudo apt-get install openjdk-7-jdk`
+        - In Ubuntu 16.04 LTS, as of this time, java 7 is not available
     - Download Scala here: http://www.scala-lang.org/download/
     - put in home directory 
     - `jars/jvmr` should be installed in my scala libs. Check for updates? (https://cran.r-project.org/src/contrib/Archive/jvmr/)
