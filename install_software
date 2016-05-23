@@ -22,13 +22,14 @@
 #    using Gadfly, PyPlot, RCall
 
 # Install jupyter through julia IJulia.jl and make serachable
-# Pkg.add("IJulia")
-# using IJulia
-# import Conda
-# x = Conda.SCRIPTDIR
-# ;echo "" >> ~/.bashrc
-# ;echo "# Making Jupyter path searchable" >> ~/.bashrc
-# ;echo "export PATH=$x:\$PATH" >> ~/.bashrc
+#Pkg.add("IJulia")
+#using IJulia
+#import Conda
+#x = Conda.SCRIPTDIR
+#;echo "" >> ~/.bashrc
+#;echo "# Making Jupyter path searchable" >> ~/.bashrc
+#;echo "export PATH=$x:\$PATH" >> ~/.bashrc
+#;echo "alias jn='jupyter-notebook'" >> ~/.bashrc
 
 # Installing jupyter-vim-bindings
 # https://github.com/lambdalisue/jupyter-vim-binding
@@ -168,8 +169,10 @@
 # > WARN BLAS: Failed to load implementation from: com.github.fommil.netlib.NativeRefBLAS
 # > WARN LAPACK: Failed to load implementation from: com.github.fommil.netlib.NativeSystemLAPACK
 # > WARN LAPACK: Failed to load implementation from: com.github.fommil.netlib.NativeRefLAPACK
+#
 # sudo apt-get install libatlas3-base libopenblas-base
-# I think it's better to do sudo apt-get install liblapack-dev libopenblas-base
+# OR (I think it's better to do)
+# sudo apt-get install liblapack-dev libopenblas-base
 # OR (https://github.com/fommil/netlib-java) figure out how to link 
 #   $ mkdir tmpOB
 #   $ cd tmpOB
