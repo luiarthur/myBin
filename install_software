@@ -155,15 +155,19 @@
 # Install jupyter-scala and IRKernel
 # jupyter-scala
 #   https://github.com/alexarchambault/jupyter-scala
-# IRKernel (takes about 5 minutes)
+#
+# 
+# IRKernel (Preferred Installation method. About 5 minutes)
 # http://irkernel.github.io/installation/#linux-panel
 # sudo apt-get install libzmq3-dev
 #R> install.packages(c('rzmq','repr','IRkernel','IRdisplay'),
 #                    repos = c('http://irkernel.github.io/', getOption('repos')),
 #                    type = 'source')
+#R> IRkernel::installspec()
 #
-# # This also installs R, but can't choose version?
-# # conda install -c r r-essentials to install 
+# The following is an alternative way to install R and IRkernel through Conda, 
+# but can't choose version? (Not my preferred way)
+# conda install -c r r-essentials to install 
 
 # After Upgrading to Ubuntu 16.04 LTS
 # install openjdk-7-jdk (instead of 8) see the following
