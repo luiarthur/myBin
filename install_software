@@ -21,16 +21,14 @@
 #    Pkg.add("RCall")
 #    using Gadfly, PyPlot, RCall
 
-# Install jupyter through julia IJulia.jl
+# Install jupyter through julia IJulia.jl and make serachable
 # Pkg.add("IJulia")
 # using IJulia
-#
-# Then add the binary path to bashrc to launch jupyter from terminal with: jupyter notebook
-#import Conda
-#x = Conda.SCRIPTDIR
-#;echo "" >> ~/.bashrc
-#;echo "# Making Jupyter path searchable" >> ~/.bashrc
-#;echo "export PATH=$x:\$PATH" >> ~/.bashrc
+# import Conda
+# x = Conda.SCRIPTDIR
+# ;echo "" >> ~/.bashrc
+# ;echo "# Making Jupyter path searchable" >> ~/.bashrc
+# ;echo "export PATH=$x:\$PATH" >> ~/.bashrc
 
 # Installing jupyter-vim-bindings
 # https://github.com/lambdalisue/jupyter-vim-binding
