@@ -135,3 +135,10 @@ nmap <C-S-p> "+p<CR>      " paste the contents of the buffer file
 noremap <F9> zR
 
 set number
+
+" Copy and paste between sessions or X11 sessions (alternative)
+"vmap <C-S-u> :w ! xsel<CR>
+"vmap <C-S-y> :w! ~/.vbuf<CR>     " copy the current visual selection to ~/.vbuf
+"nmap <C-S-p> :r ~/.vbuf<CR>      " paste the contents of the buffer file
+
+
