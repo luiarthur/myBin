@@ -7,7 +7,9 @@ git push
 ORANGE='\033[0;33m'
 CYAN='\033[0;36m'
 NC='\033[0m' # No Color
+bold=$(tput bold)
+normal=$(tput sgr0)
 
 sizeOfDir=$( echo `du -sh` | cut -d " " -f1 )
-printf "${CYAN}Size of dir (including ignored): $sizeOfDir\n"
+printf "${CYAN}Size of dir (including ignored): {bold}$sizeOfDir\n{normal}"
 printf "${ORANGE}$(date)${NC}\n"
