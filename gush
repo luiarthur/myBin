@@ -8,6 +8,6 @@ ORANGE='\033[0;33m'
 CYAN='\033[0;36m'
 NC='\033[0m' # No Color
 
-sizeOfDir="echo `du -sh | cut -d " " -f1`"
+sizeOfDir="`du -sh | cut -d " " -f1`"
 printf "${CYAN}size of dir:  $sizeOfDir \n"
 printf "${ORANGE}$(date)${NC}\n"
