@@ -7,9 +7,9 @@ git push
 source ~/.bashColors
 
 sizeOfDir=$( echo `du -sh` | cut -d " " -f1 )
+sizepack=$( git count-objects -vH | grep 'size-pack' )
+sizeOfRepo=$( cut -d' ' -f2- $sizepack)
 
-
-sizeOfRepo=$( git count-objects -vH | grep 'size-pack' )
 printf "${BLUE}Size of dir (including ignored): ${BLUE}$sizeOfDir\n"
 printf "$sizeOfRepo\n"
 printf "${ORANGE}$(date)${NC}\n"
