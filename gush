@@ -6,7 +6,8 @@ git push
 
 source ~/.bashColors
 
-sizeOfDir=$( echo `git rev-parse --show-toplevel | du -sh ` | cut -d " " -f1 )
+topDir=`git rev-parse --show-toplevel`
+sizeOfDir=$( echo `du -sh $topDir` | cut -d " " -f1 )
 sizeOfRepo=$( git count-objects -vH | grep 'size-pack' | sed -r 's/\.([0-9]+)//g' | cut -d' ' -f2- | sed 's/[iB\ ]//g' )
 
 printf "${BLUE}Size of dir:  $sizeOfDir\n"
