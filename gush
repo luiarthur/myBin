@@ -9,7 +9,7 @@ source ~/.bashColors
 sizeOfDir=$( echo `du -sh` | cut -d " " -f1 )
 sizeOfRepo=$( git count-objects -vH | grep 'size-pack' | cut -d' ' -f2- )
 
-printf "${BLUE}Size of dir (including ignored): ${BLUE}$sizeOfDir\n"
+printf "${BLUE}Size of dir (including ignored): $sizeOfDir\n"
 printf "Size of Repo: $sizeOfRepo\n"
 printf "${ORANGE}$(date)${NC}\n"
 
