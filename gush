@@ -9,5 +9,5 @@ CYAN='\033[0;36m'
 NC='\033[0m' # No Color
 
 printf "${CYAN}size of dir:"
-`du -sh | cut -d " " -f1`
+du -sh | cut -d " " -f1
 printf "${ORANGE}$(date)${NC}\n"
