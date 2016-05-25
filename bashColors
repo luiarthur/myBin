@@ -18,7 +18,7 @@ LIGHTRED='\033[1;31m'
 LIGHTPURPLE='\033[1;35m'
 YELLOW='\033[1;33m'
 WHITE='\033[1;37m'
-
 NC='\033[0m' # No Color
+
 BOLD=$(tput bold)
 NORMALT=$(tput sgr0)
