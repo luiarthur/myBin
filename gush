@@ -13,5 +13,5 @@ sizeOfRepo=$( git count-objects -vH | grep 'size-pack' | sed -r 's/\.([0-9]+)//g
 
 printf    "Size of top dir:  $sizeOfTopDir\n"
 printf        "Size of dir:  $sizeOfTopDir\n"
-printf "{BLUE}Size of repo:     $sizeOfRepo\n"
+printf "${BLUE}Size of repo:     $sizeOfRepo\n"
 printf "${ORANGE}$(date)${NC}\n"
