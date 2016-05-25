@@ -7,5 +7,5 @@ git push
 source ~/.bashColors
 
 sizeOfDir=$( echo `du -sh` | cut -d " " -f1 )
-printf "${CYAN}Size of dir (including ignored): ${bold}${red}$sizeOfDir\n${normal}"
+printf "${CYAN}Size of dir (including ignored): ${bold}${RED}$sizeOfDir\n${normal}"
 printf "${ORANGE}$(date)${NC}\n"
