@@ -7,7 +7,7 @@ git push
 source ~/.bashColors
 
 sizeOfDir=$( echo `du -sh` | cut -d " " -f1 )
-sizeOfRepo=$( git count-objects -vH | grep 'size-pack' | cut -d' ' -f2- | sed -i 's/[iB\ ]//g' | sed -r 's/\s([0-9]+)\.([0-9]+)//g' )
+sizeOfRepo=$( git count-objects -vH | grep 'size-pack' | cut -d' ' -f2- | sed 's/[iB\ ]//g' | sed -r 's/\s([0-9]+)\.([0-9]+)//g' )
 
 printf "${BLUE}Size of dir: $sizeOfDir\n"
 printf "Size of Repo: $sizeOfRepo\n"
