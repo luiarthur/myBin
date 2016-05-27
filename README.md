@@ -17,7 +17,7 @@ And install:
 - tmux (use `tmux_install.sh` if no root access. Sourced from https://gist.github.com/luiarthur/2825d04d80555a208047)
 - chrome
 - r-base-core
-- (texlive-latex-base is lightweight)
+- (texlive-latex-base is lightweight, texlive-full solves all latex problems. But takes a while to install (2GB))
     - http://tex.stackexchange.com/questions/160878/how-can-i-install-font-t1-from-ecrm1200-using-tex-live-manager-tlmgr
     - http://askubuntu.com/questions/485514/how-to-properly-install-and-use-texlive-with-package-manager-in-14-04
 - Scala
