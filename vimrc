@@ -133,9 +133,10 @@ vmap <C-S-u> :w! xsel<CR> " copy the current visual selection to X11 clipboard u
 vmap <C-S-y> "+y<CR>      " copy the current visual selection to ~/.vbuf
 nmap <C-S-p> "+p<CR>      " paste the contents of the buffer file
 noremap <F9> zR
-nmap <F1> <nop> " disables F1 help
-
 set number
+
+" disable F1 for help
+nmap <F1> <nop>
 
 " Copy and paste between sessions or X11 sessions (alternative)
 "vmap <C-S-u> :w ! xsel<CR>
