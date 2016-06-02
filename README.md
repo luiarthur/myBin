@@ -126,3 +126,7 @@ Useful Bash Commands to know:
 > XDG_DOCUMENTS_DIR="$HOME/downloads"  
 > XDG_PICTURES_DIR="$HOME/downloads"  
 > XDG_VIDEOS_DIR="$HOME/downloads"  
+
+- Fonts:
+  - install code-new-roman: http://www.1001fonts.com/code-new-roman-font.html
+  - unzip to `~/.fonts/code-new-roman` and make a terminal profile.
