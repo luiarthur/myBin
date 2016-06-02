@@ -44,3 +44,6 @@ ln -s $PWD/printers ~/bin/printers
 
 # git clones:
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+# Set up fonts:
+cp -r fonts/* ~/.fonts
