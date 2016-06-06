@@ -139,7 +139,8 @@ set number
 nmap <F1> <nop>
 
 " Change the color of PreProc's like 'include' in C
-highlight PreProc ctermfg=magenta
+highlight Preproc ctermfg=magenta
+highlight Special ctermfg=magenta
 
 " Copy and paste between sessions or X11 sessions (alternative)
 "vmap <C-S-u> :w ! xsel<CR>
