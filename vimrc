@@ -138,6 +138,9 @@ set number
 " disable F1 for help
 nmap <F1> <nop>
 
+" Change the color of PreProc's like 'include' in C
+highlight PreProc ctermfg=magenta
+
 " Copy and paste between sessions or X11 sessions (alternative)
 "vmap <C-S-u> :w ! xsel<CR>
 "vmap <C-S-y> :w! ~/.vbuf<CR>     " copy the current visual selection to ~/.vbuf
