@@ -145,7 +145,7 @@ export PATH=~/bin:$PATH
 
 # Scala
 #export SCALA_HOME=$HOME/programs/scala-2.11.8
-#export PATH=$PATH:$SCALA_HOME/bin
+#export PATH=$SCALA_HOME/bin:$PATH
 
 # Python Setup
 #export PYTHONSTARTUP=~/.pythonrc
