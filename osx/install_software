@@ -7,6 +7,12 @@
 # Installing TMUX
   brew install tmux
 
+# Installing MacVim
+  brew install macvim
+  # Add to ~/.bashrc
+  # alias vi="mvim -v"
+  # alias vim="mvim -v"
+
 # Installing MacTex
 # http://tex.stackexchange.com/questions/106113/is-there-any-way-to-have-a-latex-compiler-on-a-mac-without-root-access
 
