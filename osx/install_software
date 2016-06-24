@@ -13,6 +13,9 @@
   # alias vi="mvim -v"
   # alias vim="mvim -v"
 
+# Install wget
+  brew install wget
+
 # Installing MacTex
 # http://tex.stackexchange.com/questions/106113/is-there-any-way-to-have-a-latex-compiler-on-a-mac-without-root-access
 
