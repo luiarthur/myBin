@@ -7,6 +7,8 @@
 # Installing TMUX
   brew install tmux
 
-
 # Installing MacTex
 # http://tex.stackexchange.com/questions/106113/is-there-any-way-to-have-a-latex-compiler-on-a-mac-without-root-access
+
+# Installing python / pip / Setuptools (default osx python doesn't have pip)
+  brew install python
