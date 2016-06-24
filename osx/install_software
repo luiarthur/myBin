@@ -3,8 +3,9 @@
   cd $HOME
   git clone https://github.com/mxcl/homebrew.git
   export PATH=${HOME}/homebrew/bin:${PATH}
-  brew install tree
-  tree
+
+# Installing TMUX
+  brew install tmux
 
 
 # Installing MacTex
