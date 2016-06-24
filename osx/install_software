@@ -1,0 +1,11 @@
+# Installing Homebrew
+# https://www.lolindrath.com/2011/09/13/hombrew-from-home-directory/#
+  cd $HOME
+  git clone https://github.com/mxcl/homebrew.git
+  export PATH=${HOME}/homebrew/bin:${PATH}
+  brew install tree
+  tree
+
+
+# Installing MacTex
+# http://tex.stackexchange.com/questions/106113/is-there-any-way-to-have-a-latex-compiler-on-a-mac-without-root-access
