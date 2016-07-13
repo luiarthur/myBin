@@ -21,3 +21,7 @@
 
 # Installing python / pip / Setuptools (default osx python doesn't have pip)
   brew install python
+
+# Install vultureOSX
+  ln -s $PWD/vultureOSX.py ~/bin/vultureOSX.py
+
