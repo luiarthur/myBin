@@ -17,8 +17,8 @@ ext = os.path.splitext(fname)[1]
 class MyHandler(PatternMatchingEventHandler):
     patterns = ["*"+ext]
     def on_created(self, event):
-        print("Changed made at: "+event.src_path +"...")
         os.system (cmd)
+        print "######################### Changed made at: "+event.src_path +" #########################"
 
 observer = Observer()
 observer.schedule(MyHandler(), path, recursive=False)
