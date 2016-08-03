@@ -14,6 +14,9 @@ path = "." if os.path.dirname(fullpath) == "" else os.path.dirname(fullpath) + "
 fname = os.path.basename(fullpath)
 ext = os.path.splitext(fname)[1]
 
+os.system (cmd)
+print "######################### Changed made at: "+ path + "/" + fname +" #########################"
+
 class MyHandler(PatternMatchingEventHandler):
     patterns = ["*"+ext]
     def on_created(self, event):
