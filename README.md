@@ -134,6 +134,7 @@ Useful Bash Commands to know:
 - Scala:
 
   - http://statr.me/2015/09/an-overview-of-linear-algebra-libraries-in-scala-java/
+  - https://datasciencemadesimpler.wordpress.com/tag/breeze/
 
 > Scala/Java libraries are usually distributed as *.jar files. To use them in
 > Scala, we can create a directory to hold them and set up the environment
