@@ -130,3 +130,16 @@ Useful Bash Commands to know:
 - Fonts:
   - install code-new-roman: http://www.1001fonts.com/code-new-roman-font.html
   - unzip to `~/.fonts/code-new-roman` and make a terminal profile.
+
+- Scala:
+> Scala/Java libraries are usually distributed as *.jar files. To use them in
+> Scala, we can create a directory to hold them and set up the environment
+> variable to let Scala know about this path. For example, we first create a
+> folder named scala_lib in home directory, and then edit the .bash_profile
+> file (create one if it does not exist), adding the following line:
+>
+> `export CLASSPATH=$CLASSPATH:~/scala_lib/*`
+> To make it effective for the current session, type in the terminal
+>
+> source .bash_profile
+> Then the .jar files can be downloaded to this directory and Scala will recognize it.
