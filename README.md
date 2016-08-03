@@ -132,6 +132,8 @@ Useful Bash Commands to know:
   - unzip to `~/.fonts/code-new-roman` and make a terminal profile.
 
 - Scala:
+
+  - http://statr.me/2015/09/an-overview-of-linear-algebra-libraries-in-scala-java/
 > Scala/Java libraries are usually distributed as *.jar files. To use them in
 > Scala, we can create a directory to hold them and set up the environment
 > variable to let Scala know about this path. For example, we first create a
@@ -139,7 +141,9 @@ Useful Bash Commands to know:
 > file (create one if it does not exist), adding the following line:
 >
 > `export CLASSPATH=$CLASSPATH:~/scala_lib/*`
+>
 > To make it effective for the current session, type in the terminal
 >
 > source .bash_profile
 > Then the .jar files can be downloaded to this directory and Scala will recognize it.
+
