@@ -145,6 +145,6 @@ Useful Bash Commands to know:
 >
 > To make it effective for the current session, type in the terminal
 >
-> source .bash_profile
+> source .bashrc
 > Then the .jar files can be downloaded to this directory and Scala will recognize it.
 
