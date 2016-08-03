@@ -133,6 +133,7 @@ Useful Bash Commands to know:
 
 - Scala:
 
+  - adding jars permanently to default classpath and breeze openblas setup
   - http://statr.me/2015/09/an-overview-of-linear-algebra-libraries-in-scala-java/
   - https://datasciencemadesimpler.wordpress.com/tag/breeze/
 
