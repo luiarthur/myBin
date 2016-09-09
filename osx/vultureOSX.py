@@ -15,13 +15,13 @@ fname = os.path.basename(fullpath)
 ext = os.path.splitext(fname)[1]
 
 os.system (cmd)
-print "######################### Changed made at: "+ path + "/" + fname +" #########################"
+print "######################### Changes made at: "+ path + "/" + fname +" #########################"
 
 class MyHandler(PatternMatchingEventHandler):
     patterns = ["*"+ext]
     def on_created(self, event):
         os.system (cmd)
-        print "######################### Changed made at: "+event.src_path +" #########################"
+        print "######################### Changes made at: "+event.src_path +" #########################"
 
 observer = Observer()
 observer.schedule(MyHandler(), path, recursive=False)
