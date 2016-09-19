@@ -1,0 +1,27 @@
+# Installing Homebrew
+# https://www.lolindrath.com/2011/09/13/hombrew-from-home-directory/#
+  cd $HOME
+  git clone https://github.com/mxcl/homebrew.git
+  export PATH=${HOME}/homebrew/bin:${PATH}
+
+# Installing TMUX
+  brew install tmux
+
+# Installing MacVim
+  brew install macvim
+  # Add to ~/.bashrc
+  # alias vi="mvim -v"
+  # alias vim="mvim -v"
+
+# Install wget
+  brew install wget
+
+# Installing MacTex
+# http://tex.stackexchange.com/questions/106113/is-there-any-way-to-have-a-latex-compiler-on-a-mac-without-root-access
+
+# Installing python / pip / Setuptools (default osx python doesn't have pip)
+  brew install python
+
+# Install vultureOSX
+  ln -s $PWD/vultureOSX.py ~/bin/vultureOSX.py
+

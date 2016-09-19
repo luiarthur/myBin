@@ -193,3 +193,7 @@
 #   sudo make install PREFIX=/path/to/OpenBLAS
 #   cd ..
 #   # rm -rf tmpOB
+#
+
+# Install Intellij from https://www.jetbrains.com/idea/
+# Vim and Scala plugins are available

@@ -1,6 +1,9 @@
 #!/bin/bash
 
 echo
+cat /etc/*-release
+echo
+
 echo "$HOSTNAME:"
 
 echo -n "  CPU: "
