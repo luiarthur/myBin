@@ -1,6 +1,6 @@
 #!/bin/bash
 
-server="citrisdance"
+server="firedance"
 
 echo
 ssh alui2@$server.soe.ucsc.edu <<EOF

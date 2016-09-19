@@ -2,7 +2,7 @@
 # For instructions on how to use getopts, see:  http://wiki.bash-hackers.org/howto/getopts_tutorial
 
 username="alui2" # Change this accordingly
-server="citrisdance" # Change this accordingly
+server="firedance" # Change this accordingly
 argnum=$#
 
 if [ $argnum == 0 ]
