@@ -37,6 +37,7 @@ ln -s $PWD/minify ~/bin/minify
 ln -s $PWD/litreview ~/bin/litreview
 ln -s $PWD/comptex ~/bin/comptex
 ln -s $PWD/bashColors ~/.bashColors
+ln -s $PWD/sbtgen ~/bin/sbtgen
 
 # For use in UCSC
 ln -s $PWD/arrow ~/bin/arrow
