@@ -28,6 +28,10 @@ libraryDependencies ++= Seq(
 )
 " > build.sbt
 
+  echo "import org.scalatest.FunSuite
+class TestSuite extends FunSuite {
+}" > src/test/scala/TestSuite.scala
+
 fi
 
 exit 0
