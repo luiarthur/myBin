@@ -25,7 +25,7 @@ function! LineFeederSetUp()
   elseif ext == "rb"
     let cmd = "irb"
   elseif ext == "jl"
-    let cmd = "julia"
+    let cmd = "$HOME/programs/julia-0.5.0/bin/julia"
   elseif ext == "scala"
     let cmd = "scala"
   elseif ext == "py"
@@ -50,3 +50,8 @@ function! LineFeederChunk()
   call LineFeederNextLine()
 endfunction
 vmap <silent> <C-S-j> :call LineFeederChunk()<CR>
+
+function! LineFeederSideChunk()
+  call LineFeederSideLine()
+endfunction
+vmap <silent> <C-S-l> :call LineFeederSideChunk()<CR>
