@@ -20,14 +20,17 @@ Plugin 'derekwyatt/vim-scala'    " Scala
 Plugin 'tmux-plugins/vim-tmux'   " tmux
 Plugin 'JuliaLang/julia-vim'     " Julia
 Plugin 'godlygeek/tabular'       " Auto Indent
-Plugin 'plasticboy/vim-markdown' " Markdown
 Plugin 'octol/vim-cpp-enhanced-highlight' " C++
 Plugin 'fatih/vim-go'            " Go-lang
+Plugin 'vim-pandoc/vim-pandoc-syntax' " pandoc
+Plugin 'vim-pandoc/vim-pandoc'        "pandoc
 
 " For Markdown
-let g:vim_markdown_folding_disabled = 1
-let g:vim_markdown_math = 1
-let g:vim_markdown_frontmatter = 1
+set nofoldenable    " disable folding
+"Plugin 'plasticboy/vim-markdown' " Markdown
+"let g:vim_markdown_folding_disabled = 1
+"let g:vim_markdown_math = 1
+"let g:vim_markdown_frontmatter = 1
 
 " Add this to the syntax file in ~/.vim/bundle/vim-cpp-enhanced-highlight
 "" Arthur RcppArmadillo.
