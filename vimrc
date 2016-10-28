@@ -18,7 +18,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'       " Vim
 Plugin 'derekwyatt/vim-scala'    " Scala
 Plugin 'tmux-plugins/vim-tmux'   " tmux
-Plugin 'JuliaLang/julia-vim'     " Julia
+Plugin 'JuliaEditorSupport/julia-vim' "julia
 Plugin 'godlygeek/tabular'       " Auto Indent
 Plugin 'octol/vim-cpp-enhanced-highlight' " C++
 Plugin 'fatih/vim-go'            " Go-lang
