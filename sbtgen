@@ -13,8 +13,8 @@ then
   echo
 else
   projName="$1"
-  mkdir -p src/{main,test}/{java,resources,scala}
-  mkdir lib project target
+  mkdir -p $projName/src/{main,test}/{java,resources,scala}
+  mkdir $projName/lib $projName/project $projName/target
 
   # create an initial build.sbt file
   echo "name := \"$projName\"
@@ -26,11 +26,11 @@ scalaVersion := \"2.11.8\"
 libraryDependencies ++= Seq(
   \"org.scalatest\" %% \"scalatest\" % \"3.0.0\" % \"test\"
 )
-" > build.sbt
+" > $projName/build.sbt
 
   echo "import org.scalatest.FunSuite
 class TestSuite extends FunSuite {
-}" > src/test/scala/TestSuite.scala
+}" > $projName/src/test/scala/TestSuite.scala
 
 fi
 
