@@ -41,12 +41,5 @@ ln -s $PWD/sbtgen ~/bin/sbtgen
 ln -s $PWD/sbt-cleanstage ~/bin/sbt-cleanstage
 ln -s $PWD/combineJars ~/bin/combineJars
 
-# For use in UCSC
-ln -s $PWD/arrow ~/bin/arrow
-ln -s $PWD/printers ~/bin/printers
-
 # git clones:
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-
-# Set up fonts:
-cp -r fonts/ ~/.fonts
