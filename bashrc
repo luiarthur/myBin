@@ -174,3 +174,7 @@ export PATH=~/bin:$PATH
 #alias gcalw="gcalcli calw"
 #alias gcaledit="gcalcli edit"
 #export GREP_COLOR='01;38;5;226'
+
+# MUSICNB
+#export MUSICNB_HOME=$HOME/programs/music_nb/
+#export PATH=$MUSICNB_HOME/bin:$PATH
