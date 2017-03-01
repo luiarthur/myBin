@@ -95,6 +95,24 @@ header-includes:
 
 " > $fname.md
 
+  echo "#!/bin/bash
+
+# -s        =>  create standalone file (in this case report.tex latex file)
+# --toc     =>  create table of contents
+# --natbib  =>  use the natbib package in latex
+# -o        =>  output file name
+
+pandoc $fname.md -s -o $fname.tex
+
+pdflatex $fname.tex
+bibtex $fname.aux
+pdflatex $fname.tex
+pdflatex $fname.tex
+rm -f $fname.{log,aux,nav,out,snm,toc,blg,bbl}
+rm -f $fname.tex
+" > compile
+
+  chmod +x compile
 fi
 
 exit 0
