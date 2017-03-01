@@ -15,7 +15,8 @@ endif
 let g:colors_name="redmagick"
 
 hi ColorColumn  term=NONE cterm=NONE ctermfg=NONE ctermbg=242
-hi Comment      term=NONE cterm=NONE ctermfg=236  ctermbg=NONE
+"hi Comment      term=NONE cterm=NONE ctermfg=236  ctermbg=NONE
+hi Comment      term=NONE cterm=NONE ctermfg=17   ctermbg=NONE
 hi Conditional  term=NONE cterm=NONE ctermfg=241  ctermbg=NONE
 hi Constant     term=NONE cterm=NONE ctermfg=196  ctermbg=NONE
 hi Cursor       term=NONE cterm=NONE ctermfg=242  ctermbg=NONE
