@@ -11,6 +11,9 @@
 # Copy the following to HOME:
 mkdir -p ~/bin
 mkdir -p ~/lib/R_lib
+mkdir -p ~/.vim/colors
+
+cp redmagick.vim ~/.vim/colors
 cp tmux.conf ~/.tmux.conf
 cp vimrc ~/.vimrc
 cp vimrc.line-feeder-3 ~/.vimrc.line-feeder-3

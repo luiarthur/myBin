@@ -175,3 +175,6 @@ autocmd BufNewFile,BufRead *.mnb   set syntax=markdown
 
 " Set spell check for markdown files
 au BufRead *.md setlocal spell
+
+" Set colorsheme to ~/.vim/colors/redmagick. Comment out to disable.
+colorscheme redmagick

@@ -113,6 +113,9 @@ shopt -s extglob   # Enable extended globbing
 set -o noclobber   # Dont clobber existing files on redirection
 set -o vi
 
+# COMMENT IF NOT USING redmagick
+export TERM=xterm-256color
+
 # Commands for remembering a directory
 # alias dir="ls --color=auto -lFh"
 # alias dir.all="ls --color=auto -alFh"
