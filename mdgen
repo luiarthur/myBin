@@ -16,7 +16,7 @@ else
   fname="$1"
   # create an initial build.sbt file
   echo "---
-title: \"\"
+title: \"Title\"
 author: Arthur Lui
 date: \"$currDate\"
 geometry: margin=1in
