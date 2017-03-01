@@ -172,3 +172,6 @@ inoremap <S-tab> <c-r>=CompleteCode()<cr>
 
 " MusicNB highlight as markdown
 autocmd BufNewFile,BufRead *.mnb   set syntax=markdown
+
+" Set spell check for markdown files
+au BufRead *.md setlocal spell
