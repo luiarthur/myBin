@@ -19,6 +19,10 @@ let g:colors_name="redmagick"
 function! ExecHi(att,fg,bg)
   execute 'hi ' . a:att 'ctermfg=' . a:fg 'ctermbg=' . a:bg
 endfunction
+" execute hilight cterm
+function! ExecHiMore(att,term,cterm,fg,bg)
+  execute 'hi ' . a:att 'term=' . a:term 'cterm=' . a:cterm 'ctermfg=' . a:fg 'ctermbg=' . a:bg
+endfunction
 
 
 " Color key
@@ -30,10 +34,11 @@ let DarkDarkGrey  = 236
 let DarkOrange3   = 166
 let Red1          = 196 "bright
 let Red3          = 160 "brown
-let DarkRed       = 52
-let Green        = 2 "46
+let DarkRed       = 88 "52
+let Green         = 2 "46
 let Black         = 0
 let NONE          = "NONE"
+let bold          = "bold"
 
 
 call ExecHi("ColorColumn",NONE,DarkGrey)
@@ -58,12 +63,12 @@ call ExecHi("NonText",DarkGrey,NONE)
 call ExecHi("Normal",LightGrey,NONE)
 call ExecHi("Number",Red1,NONE)
 call ExecHi("Operator",DarkGrey,NONE)
-call ExecHi("PreProc",DarkRed,NONE)
+call ExecHiMore("PreProc",NONE,bold,DarkRed,NONE)
 call ExecHi("Repeat",DarkGrey,NONE)
-call ExecHi("Search",DarkRed,LightGrey)
+call ExecHiMore("Search",NONE,bold,DarkRed,LightGrey)
 call ExecHi("Special",DarkOrange3,NONE)
 call ExecHi("SpecialKey",DarkGrey,NONE)
-hi Statement cterm=bold ctermfg=DarkGrey ctermbg=NONE
+call ExecHiMore("Statement",NONE,bold,DarkGrey,NONE)
 call ExecHi("StatusLine",DarkGrey,NONE)
 call ExecHi("String",Red3,NONE)
 call ExecHi("TabLineSel",LightGrey,NONE)
