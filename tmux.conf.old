@@ -1,0 +1,57 @@
+set-option -g status-keys vi
+set-option -g repeat-time 1000
+
+set-option display-panes-time 6000
+set-option display-time 6000
+
+set-option -g history-limit 100000
+
+set-window-option -g mode-keys vi
+
+bind-key C-a send-prefix
+bind-key @ run-shell "tmux new-window 'vi ~/.tmux.conf; tmux source-file ~/.tmux.conf; tmux display-message \"Reread configuration file\"'"
+
+# move tmux copy buffer into X clipboard
+bind-key C-y save-buffer /tmp/tmux-buffer\; run-shell "cat /tmp/tmux-buffer | xclip"
+
+#the line below should say: bind-key C-C send-keys 'tmux -q set-option default-path $PWD;echo^M'
+bind-key C-C send-keys 'tmux -q set-option default-path $PWD;echo'
+
+#the line below should say: bind-key C-H select-pane -D\; send-keys '^[OA^M'\; select-pane -U
+bind-key C-H select-pane -D\; send-keys 'OA'\; select-pane -U
+
+unbind-key l
+bind-key h select-pane -L
+bind-key l select-pane -R
+bind-key k select-pane -U
+bind-key j select-pane -D
+
+unbind-key Left
+unbind-key Right
+unbind-key Up
+unbind-key Down
+
+# DBD: From some reason, vi doesn't receive or process C-PageUp or C-PageDown to change tabs.
+
+# The next three lines should end in '^[:tabn^M'
+bind-key -r O       send-keys ':tabn'
+bind-key -n C-PPage send-keys ':tabn'
+bind-key -n C-NPage send-keys ':tabp'
+
+# DBD: Default keybinding, expect allowing repeating
+bind-key -r o select-pane -t :.+
+
+# gcalcli. Comment if gcalcli not installed!
+set-option -g status-interval 60  
+set-option -g status-left-length 30  
+set-option -g status-left " #[fg=colour123,bold]#(gcal -d | head -2 | tail -1 | cut -d ' ' -f 8-) #[default] | "  
+
+# For TMUX > 1.9
+bind '"' split-window -c "#{pane_current_path}"
+bind % split-window -h -c "#{pane_current_path}"
+bind c new-window -c "#{pane_current_path}"
+
+# set status bar to black
+set -g status-bg black
+set -g status-fg white
+set -g pane-active-border-fg magenta
