@@ -3,7 +3,7 @@
 " ╹ ┗┗━╸┗━┛   ╹ ╹╹ ╹┗━┛╹┗━╸╹ ╹
 " original blaque magick by xero harrison (http://blaquemagick.xero.nu)
 " https://github.com/xero/blaquemagick.vim
-" red magick version by mickey
+" red magick version by Arthur Lui
 
 set background=dark
 hi clear
@@ -23,68 +23,63 @@ endfunction
 
 " Color key
 let DeepPink4     = 125
-let Grey78        = 251
-let Grey70        = 249
-let Grey62        = 247
-let Grey50        = 244
-let Grey42        = 242
-let Grey39        = 241
-let Grey27        = 238
-let Grey23        = 237
+let LightGrey     = 249
+let Grey          = 245
+let DarkGrey      = 238
+let DarkDarkGrey  = 236
 let DarkOrange3   = 166
-let Grey0         = 16
-let Red1          = 196
-let Red3          = 160
+let Red1          = 196 "bright
+let Red3          = 160 "brown
 let DarkRed       = 52
-let Green1        = 46
+let Green        = 2 "46
 let Black         = 0
 let NONE          = "NONE"
 
 
-call ExecHi("ColorColumn",NONE,Grey42)
+call ExecHi("ColorColumn",NONE,DarkGrey)
 call ExecHi("Comment",DeepPink4,NONE)
-call ExecHi("Conditional",Grey39,NONE)
+call ExecHi("Conditional",DarkGrey,NONE)
 call ExecHi("Constant",Red1,NONE)
-call ExecHi("Cursor",Grey42,NONE)
+call ExecHi("Cursor",DarkGrey,NONE)
 call ExecHi("CursorLine",NONE,NONE)
-call ExecHi("DiffAdd",Grey27,NONE)
-call ExecHi("DiffChange",NONE,Green1)
-call ExecHi("DiffDelete",Grey78,Green1)
-call ExecHi("DiffText",Grey78,Grey50)
-call ExecHi("Directory",Grey50,Grey0)
-call ExecHi("Error",Green1,Grey50)
-call ExecHi("ErrorMsg",Green1,Grey0)
-call ExecHi("FoldColumn",Grey27,NONE)
-call ExecHi("Folded",Grey27,NONE)
+call ExecHi("DiffAdd",DarkGrey,NONE)
+call ExecHi("DiffChange",NONE,DeepPink4)
+call ExecHi("DiffDelete",LightGrey,Green)
+call ExecHi("DiffText",LightGrey,Grey)
+call ExecHi("Directory",Grey,Black)
+call ExecHi("Error",Green,Grey)
+call ExecHi("ErrorMsg",Green,Black)
+call ExecHi("FoldColumn",DarkGrey,NONE)
+call ExecHi("Folded",DarkGrey,NONE)
 call ExecHi("Function",Red3,NONE)
 call ExecHi("Identifier",Red3,NONE)
-call ExecHi("IncSearch",Black,NONE)
-call ExecHi("NonText",Grey27,NONE)
-call ExecHi("Normal",Grey70,NONE)
+call ExecHi("IncSearch",Grey,NONE)
+call ExecHi("NonText",DarkGrey,NONE)
+call ExecHi("Normal",LightGrey,NONE)
 call ExecHi("Number",Red1,NONE)
-call ExecHi("Operator",Grey39,NONE)
+call ExecHi("Operator",DarkGrey,NONE)
 call ExecHi("PreProc",DarkRed,NONE)
-call ExecHi("Repeat",Grey27,NONE)
-call ExecHi("Search",DarkRed,Grey62)
+call ExecHi("Repeat",DarkGrey,NONE)
+call ExecHi("Search",DarkRed,LightGrey)
 call ExecHi("Special",DarkOrange3,NONE)
-call ExecHi("SpecialKey",Grey27,NONE)
-call ExecHi("Statement",Grey27,NONE)
-call ExecHi("StatusLine",Grey27,NONE)
+call ExecHi("SpecialKey",DarkGrey,NONE)
+hi Statement cterm=bold ctermfg=DarkGrey ctermbg=NONE
+call ExecHi("StatusLine",DarkGrey,NONE)
 call ExecHi("String",Red3,NONE)
-call ExecHi("TabLineSel",Grey78,NONE)
+call ExecHi("TabLineSel",LightGrey,NONE)
 call ExecHi("Title",DarkRed,NONE)
-call ExecHi("Todo",Grey78,Green1)
-call ExecHi("Type",Grey78,NONE)
-call ExecHi("VertSplit",Grey27,NONE)
-call ExecHi("Visual",Grey27,NONE)
-call ExecHi("WarningMsg",Grey42,NONE)
-call ExecHi("LineNr",Grey23,NONE)
-call ExecHi("CursorLineNr",Grey0,Grey23)
+call ExecHi("Todo",LightGrey,Green)
+call ExecHi("Type",LightGrey,NONE)
+call ExecHi("VertSplit",DarkGrey,NONE)
+call ExecHi("Visual",DarkGrey,LightGrey)
+call ExecHi("WarningMsg",DarkGrey,NONE)
+call ExecHi("LineNr",DarkDarkGrey,NONE)
+call ExecHi("CursorLineNr",Black,DarkDarkGrey)
 
-call ExecHi("Pmenu",Grey70,Grey78)
-call ExecHi("PmenuSel",  Grey27,Green1)
-call ExecHi("PmenuSbar", Grey27,Green1)
-call ExecHi("PmenuThumb",Grey27,Green1)
+call ExecHi("Pmenu",LightGrey,DarkDarkGrey)
+call ExecHi("PmenuSel",  DarkGrey,Green)
+call ExecHi("PmenuSbar", DarkGrey,Green)
+call ExecHi("PmenuThumb",DarkGrey,Green)
 
 hi Underlined   term=underline cterm=underline ctermfg=NONE   ctermbg=NONE
 
