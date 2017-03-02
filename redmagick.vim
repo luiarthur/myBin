@@ -14,52 +14,78 @@ endif
 
 let g:colors_name="redmagick"
 
-hi ColorColumn  term=NONE cterm=NONE ctermfg=NONE ctermbg=242
-"hi Comment      term=NONE cterm=NONE ctermfg=236  ctermbg=NONE
-hi Comment      term=NONE cterm=NONE ctermfg=17   ctermbg=NONE
-hi Conditional  term=NONE cterm=NONE ctermfg=241  ctermbg=NONE
-hi Constant     term=NONE cterm=NONE ctermfg=196  ctermbg=NONE
-hi Cursor       term=NONE cterm=NONE ctermfg=242  ctermbg=NONE
-hi CursorLine   term=NONE cterm=NONE ctermfg=NONE ctermbg=NONE
-hi DiffAdd      term=NONE cterm=NONE ctermfg=238  ctermbg=NONE
-hi DiffChange   term=NONE cterm=NONE ctermfg=NONE ctermbg=46 
-hi DiffDelete   term=NONE cterm=NONE ctermfg=251  ctermbg=46 
-hi DiffText     term=NONE cterm=NONE ctermfg=251  ctermbg=244
-hi Directory    term=NONE cterm=NONE ctermfg=244  ctermbg=16
-hi Error        term=NONE cterm=NONE ctermfg=46   ctermbg=46 
-hi ErrorMsg     term=NONE cterm=NONE ctermfg=46   ctermbg=16
-hi FoldColumn   term=NONE cterm=NONE ctermfg=238  ctermbg=NONE
-hi Folded       term=NONE cterm=NONE ctermfg=238  ctermbg=NONE
-hi Function     term=NONE cterm=NONE ctermfg=160  ctermbg=NONE
-hi Identifier   term=NONE cterm=NONE ctermfg=160  ctermbg=NONE
-"hi IncSearch    term=NONE cterm=NONE ctermfg=247  ctermbg=247
-hi IncSearch    term=NONE cterm=NONE ctermfg=0  ctermbg=247
-hi NonText      term=NONE cterm=NONE ctermfg=238  ctermbg=NONE
-hi Normal       term=NONE cterm=NONE ctermfg=249  ctermbg=NONE
-hi Number       term=NONE cterm=NONE ctermfg=196  ctermbg=NONE
-hi Operator     term=NONE cterm=NONE ctermfg=241  ctermbg=NONE
-hi PreProc      term=NONE cterm=NONE ctermfg=52   ctermbg=NONE
-hi Repeat       term=NONE cterm=NONE ctermfg=238  ctermbg=NONE
-"hi Search       term=NONE cterm=NONE ctermfg=251  ctermbg=247
-hi Search       term=NONE cterm=NONE ctermfg=0  ctermbg=2
-hi Special      term=NONE cterm=NONE ctermfg=52   ctermbg=NONE
-hi SpecialKey   term=NONE cterm=NONE ctermfg=238  ctermbg=NONE
-hi Statement    term=NONE cterm=NONE ctermfg=238  ctermbg=NONE
-hi StatusLine   term=NONE cterm=NONE ctermfg=238  ctermbg=NONE
-hi String       term=NONE cterm=NONE ctermfg=160  ctermbg=NONE
-hi TabLineSel   term=NONE cterm=NONE ctermfg=251  ctermbg=NONE
-hi Title        term=NONE cterm=NONE ctermfg=52   ctermbg=NONE
-hi Todo         term=NONE cterm=NONE ctermfg=251  ctermbg=46 
-hi Type         term=NONE cterm=NONE ctermfg=251  ctermbg=NONE
-hi VertSplit    term=NONE cterm=NONE ctermfg=238  ctermbg=NONE
-hi Visual       term=NONE cterm=NONE ctermfg=238  ctermbg=251
-hi WarningMsg   term=NONE cterm=NONE ctermfg=242  ctermbg=NONE
-hi LineNr       term=NONE cterm=NONE ctermfg=237  ctermbg=NONE
-hi CursorLineNr term=NONE cterm=NONE ctermfg=16   ctermbg=237 
-hi Pmenu        term=NONE cterm=NONE ctermfg=249  ctermbg=251
-hi PmenuSel     term=NONE cterm=NONE ctermfg=238  ctermbg=46 
-hi PmenuSbar    term=NONE cterm=NONE ctermfg=238  ctermbg=46 
-hi PmenuThumb   term=NONE cterm=NONE ctermfg=238  ctermbg=46 
+
+" execute hilight
+function! ExecHi(att,fg,bg)
+  execute 'hi ' . a:att 'ctermfg=' . a:fg 'ctermbg=' . a:bg
+endfunction
+
+
+" Color key
+let DeepPink4     = 125
+let Grey78        = 251
+let Grey70        = 249
+let Grey62        = 247
+let Grey50        = 244
+let Grey42        = 242
+let Grey39        = 241
+let Grey27        = 238
+let Grey23        = 237
+let DarkOrange3   = 166
+let Grey0         = 16
+let Red1          = 196
+let Red3          = 160
+let DarkRed       = 52
+let Green1        = 46
+let Black         = 0
+let NONE          = "NONE"
+
+
+call ExecHi("ColorColumn",NONE,Grey42)
+call ExecHi("Comment",DeepPink4,NONE)
+call ExecHi("Conditional",Grey39,NONE)
+call ExecHi("Constant",Red1,NONE)
+call ExecHi("Cursor",Grey42,NONE)
+call ExecHi("CursorLine",NONE,NONE)
+call ExecHi("DiffAdd",Grey27,NONE)
+call ExecHi("DiffChange",NONE,Green1)
+call ExecHi("DiffDelete",Grey78,Green1)
+call ExecHi("DiffText",Grey78,Grey50)
+call ExecHi("Directory",Grey50,Grey0)
+call ExecHi("Error",Green1,Grey50)
+call ExecHi("ErrorMsg",Green1,Grey0)
+call ExecHi("FoldColumn",Grey27,NONE)
+call ExecHi("Folded",Grey27,NONE)
+call ExecHi("Function",Red3,NONE)
+call ExecHi("Identifier",Red3,NONE)
+call ExecHi("IncSearch",Black,NONE)
+call ExecHi("NonText",Grey27,NONE)
+call ExecHi("Normal",Grey70,NONE)
+call ExecHi("Number",Red1,NONE)
+call ExecHi("Operator",Grey39,NONE)
+call ExecHi("PreProc",DarkRed,NONE)
+call ExecHi("Repeat",Grey27,NONE)
+call ExecHi("Search",DarkRed,Grey62)
+call ExecHi("Special",DarkOrange3,NONE)
+call ExecHi("SpecialKey",Grey27,NONE)
+call ExecHi("Statement",Grey27,NONE)
+call ExecHi("StatusLine",Grey27,NONE)
+call ExecHi("String",Red3,NONE)
+call ExecHi("TabLineSel",Grey78,NONE)
+call ExecHi("Title",DarkRed,NONE)
+call ExecHi("Todo",Grey78,Green1)
+call ExecHi("Type",Grey78,NONE)
+call ExecHi("VertSplit",Grey27,NONE)
+call ExecHi("Visual",Grey27,NONE)
+call ExecHi("WarningMsg",Grey42,NONE)
+call ExecHi("LineNr",Grey23,NONE)
+call ExecHi("CursorLineNr",Grey0,Grey23)
+
+call ExecHi("Pmenu",Grey70,Grey78)
+call ExecHi("PmenuSel",  Grey27,Green1)
+call ExecHi("PmenuSbar", Grey27,Green1)
+call ExecHi("PmenuThumb",Grey27,Green1)
+
 hi Underlined   term=underline cterm=underline ctermfg=NONE   ctermbg=NONE
 
 hi! link diffAdded       DiffAdd
