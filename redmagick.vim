@@ -21,26 +21,26 @@ function! ExecHi(...) " att, ctermfg, ctermbg, term, cterm
   let att = a:1
   let fg = "NONE"
   let bg = "NONE"
-  let term = "NONE"
-  let cterm = "NONE"
+  let mterm = "NONE"
+  let mcterm = "NONE"
 
-  if numArgs > 2
+  if numArgs >=3
     let fg = a:2
   endif
 
-  if numArgs > 3
+  if numArgs >= 3
     let bg = a:3
   endif
 
-  if numArgs > 4
-    let term = a:4
+  if numArgs >= 4
+    let mterm = a:4
   endif
 
-  if numArgs > 5
-    let cterm = a:5
+  if numArgs >= 5
+    let mcterm = a:5
   endif
 
-  execute 'hi ' . att 'ctermfg=' . fg 'ctermbg=' . bg 'term=' . term 'cterm=' . cterm
+  execute 'hi ' . att 'ctermfg=' . fg 'ctermbg=' . bg 'term=' . mterm 'cterm=' . mcterm
 endfunction
 
 
@@ -94,7 +94,7 @@ call ExecHi("String",Red3,NONE)
 call ExecHi("TabLineSel",LightGrey,NONE)
 call ExecHi("Title",DarkOrange3,NONE)
 call ExecHi("Todo",LightGrey,Green)
-call ExecHi("Type",White,NONE,bold,bold)
+call ExecHi("Type",White,NONE,NONE,bold)
 call ExecHi("VertSplit",DarkGrey,NONE)
 call ExecHi("Visual",DarkGrey,LightGrey)
 call ExecHi("WarningMsg",DarkGrey,NONE)
