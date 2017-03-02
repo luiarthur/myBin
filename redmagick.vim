@@ -16,12 +16,28 @@ let g:colors_name="redmagick"
 
 
 " execute hilight
-function! ExecHi(att,fg,bg)
-  execute 'hi ' . a:att 'ctermfg=' . a:fg 'ctermbg=' . a:bg
-endfunction
-" execute hilight cterm
-function! ExecHiMore(att,term,cterm,fg,bg)
-  execute 'hi ' . a:att 'term=' . a:term 'cterm=' . a:cterm 'ctermfg=' . a:fg 'ctermbg=' . a:bg
+function! ExecHi(...) " att, ctermfg, ctermbg, term, cterm
+  let numArgs = a:0
+  let att = a:1
+  let fg = "NONE"
+  let bg = "NONE"
+  let term = "NONE"
+  let cterm = "NONE"
+
+  if numArgs > 2
+    let fg = a:2
+  endif
+  if numArgs > 3
+    let bg = a:3
+  endif
+  if numArgs > 4
+    let term = a:4
+  endif
+  if numArgs > 5
+    let cterm = a:5
+  endif
+
+  execute 'hi ' . att 'ctermfg=' . fg 'ctermbg=' . bg 'term=' . term 'cterm=' . cterm
 endfunction
 
 
@@ -37,6 +53,7 @@ let Red3          = 160 "brown
 let DarkRed       = 88 "52
 let Green         = 2 "46
 let Black         = 0
+let White         = 194
 let NONE          = "NONE"
 let bold          = "bold"
 
@@ -63,18 +80,18 @@ call ExecHi("NonText",DarkGrey,NONE)
 call ExecHi("Normal",LightGrey,NONE)
 call ExecHi("Number",Red1,NONE)
 call ExecHi("Operator",DarkGrey,NONE)
-call ExecHiMore("PreProc",NONE,bold,DarkOrange3,NONE)
+call ExecHi("PreProc",DarkOrange3,NONE,NONE,bold)
 call ExecHi("Repeat",DarkGrey,NONE)
-call ExecHiMore("Search",NONE,bold,DarkRed,LightGrey)
+call ExecHi("Search",DarkRed,LightGrey,NONE,bold)
 call ExecHi("Special",DarkRed,NONE)
 call ExecHi("SpecialKey",DarkGrey,NONE)
-call ExecHiMore("Statement",NONE,bold,DarkGrey,NONE)
+call ExecHi("Statement",DarkGrey,NONE,NONE,bold)
 call ExecHi("StatusLine",DarkGrey,NONE)
 call ExecHi("String",Red3,NONE)
 call ExecHi("TabLineSel",LightGrey,NONE)
 call ExecHi("Title",DarkOrange3,NONE)
 call ExecHi("Todo",LightGrey,Green)
-call ExecHi("Type",LightGrey,NONE)
+call ExecHi("Type",White,NONE,NONE,bold)
 call ExecHi("VertSplit",DarkGrey,NONE)
 call ExecHi("Visual",DarkGrey,LightGrey)
 call ExecHi("WarningMsg",DarkGrey,NONE)
@@ -86,7 +103,7 @@ call ExecHi("PmenuSel",  DarkGrey,Green)
 call ExecHi("PmenuSbar", DarkGrey,Green)
 call ExecHi("PmenuThumb",DarkGrey,Green)
 
-hi Underlined   term=underline cterm=underline ctermfg=NONE   ctermbg=NONE
+hi Underlined term=underline cterm=underline ctermfg=NONE ctermbg=NONE
 
 hi! link diffAdded       DiffAdd
 hi! link diffRemoved     DiffDelete
