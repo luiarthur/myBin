@@ -98,7 +98,7 @@ call ExecHi("Type",White,NONE,NONE,bold)
 call ExecHi("VertSplit",DarkGrey,NONE)
 call ExecHi("Visual",DarkGrey,LightGrey)
 call ExecHi("WarningMsg",DarkGrey,NONE)
-call ExecHi("LineNr",DarkDarkGrey,NONE)
+call ExecHi("LineNr",DeepPink4,NONE)
 call ExecHi("CursorLineNr",Black,DarkDarkGrey)
 
 call ExecHi("Pmenu",LightGrey,DarkDarkGrey)
