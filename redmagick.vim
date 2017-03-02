@@ -48,7 +48,7 @@ endfunction
 let DeepPink4     = 125
 let LightGrey     = 249
 let Grey          = 245
-let DarkGrey      = 238
+let DarkGrey      = 241 "238
 let DarkDarkGrey  = 236
 let DarkOrange3   = 166
 let Red1          = 196 "bright
@@ -78,7 +78,7 @@ call ExecHi("FoldColumn",DarkGrey,NONE)
 call ExecHi("Folded",DarkGrey,NONE)
 call ExecHi("Function",Red3,NONE)
 call ExecHi("Identifier",Red3,NONE)
-call ExecHi("IncSearch",Grey,NONE)
+call ExecHi("IncSearch",DarkRed,LightGrey)
 call ExecHi("NonText",DarkGrey,NONE)
 call ExecHi("Normal",LightGrey,NONE)
 call ExecHi("Number",Red1,NONE)
