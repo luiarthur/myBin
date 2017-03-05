@@ -38,7 +38,7 @@ header-includes:
     - \\newcommand{\\norm}[1]{\\left\\lVert#1\\right\\rVert}
     - \\newcommand{\\p}[1]{\\left(#1\\right)}
     - \\newcommand{\\bk}[1]{\\left[#1\\right]}
-    - \\newcommand{\\bc}[1]{ \left\\{#1\\right\\} }
+    - \\newcommand{\\bc}[1]{ \\left\\{#1\\right\\} }
     - \\newcommand{\\abs}[1]{ \\left|#1\\right| }
     - \\newcommand{\\mat}{ \\begin{pmatrix} }
     - \\newcommand{\\tam}{ \\end{pmatrix} }
@@ -57,7 +57,8 @@ header-includes:
     - \\def\\beginmyfig{\\begin{figure}[H]\\center}
     - \\def\\endmyfig{\\end{figure}}
     - \\newcommand{\iid}{\\overset{iid}{\\sim}}
-    - \\newcommand{\ind}{\\overset{ind}{\\sim}}
+    - \\newcommand{\\ind}{\\overset{ind}{\\sim}}
+    - \\newcommand{\\I}{\\mathrm{\\mathbf{I}}}
     #
     - \\allowdisplaybreaks
     - \\def\\M{\\mathcal{M}}
