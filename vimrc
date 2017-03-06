@@ -172,9 +172,12 @@ inoremap <S-tab> <c-r>=CompleteCode()<cr>
 
 " MusicNB highlight as markdown
 autocmd BufNewFile,BufRead *.mnb   set syntax=markdown
-
-" Set spell check for markdown files
+" enable spell check for md files
 au BufRead *.md setlocal spell
+" use a special latex dictionary for markdown
+au BufRead *.md setlocal spellfile=~/.vim/spell/tex.utf-8.add
+
+
 
 " Set colorsheme to ~/.vim/colors/redmagick. Comment out to disable.
 colorscheme redmagick
