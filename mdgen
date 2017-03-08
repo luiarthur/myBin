@@ -109,7 +109,7 @@ pdflatex $fname.tex
 bibtex $fname.aux
 pdflatex $fname.tex
 pdflatex $fname.tex
-rm -f $fname.{log,aux,nav,out,snm,toc,blg,bbl}
+rm -f *.{log,aux,nav,out,snm,toc,blg,bbl}
 rm -f $fname.tex
 " > compile
 
