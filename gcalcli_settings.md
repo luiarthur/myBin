@@ -1,6 +1,6 @@
 # gcalcli
 
-[gcalcli](https://github.com/insanum/gcalcli) is allows you to access your
+[gcalcli](https://github.com/insanum/gcalcli) allows you to access your
 Google calendar through the command line. I started using it because I 
 use a rather slow laptop for my work at school, which works great when
 I ssh onto a server to work, but was slow at loading graphics (such as
