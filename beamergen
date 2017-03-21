@@ -124,9 +124,9 @@ else
   \frametitle{Some Frame Title Here}
   \vspace{5mm}
 
-  $$
+  \$\$
   \hat\beta = (X'X)^{-1}X'y
-  $$
+  \$\$
 }
 
 
