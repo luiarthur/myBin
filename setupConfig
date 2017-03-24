@@ -12,6 +12,7 @@
 mkdir -p ~/bin
 mkdir -p ~/lib/R_lib
 mkdir -p ~/.vim/colors
+mkdir -p ~/.texmf-config/tex # for custom beamer theme
 
 ln -s $PWD/redmagick.vim ~/.vim/colors
 cp tmux.conf ~/.tmux.conf
@@ -45,6 +46,7 @@ ln -s $PWD/sbt-cleanstage ~/bin/sbt-cleanstage
 ln -s $PWD/combineJars ~/bin/combineJars
 ln -s $PWD/mdgen ~/bin/mdgen
 ln -s $PWD/beamergen ~/bin/beamergen
+ln -s $PWD/beamerthemealui.sty ~/tex-config/tex/beamerthemealui.sty
 
 # git clones:
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
