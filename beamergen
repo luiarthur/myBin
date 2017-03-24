@@ -58,7 +58,7 @@ header-includes:
     # Title:
     - \title[Short Title]{\textbf{Some Very Long and Fancy Title}}
     - \author[A. Lui]{Arthur Lui}
-    - \institute{ AMS\\ UC Santa Cruz \footnote{UCSC is awesome}}
+    - \institute{ AMS\\\\ UC Santa Cruz \footnote{UCSC is awesome}}
     # OTHER defs:
 ---
 
