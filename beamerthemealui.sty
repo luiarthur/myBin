@@ -1,0 +1,67 @@
+\mode<presentation>
+
+
+% MY STYLES
+
+% References
+%http://tex.stackexchange.com/questions/105613/footer-in-beamer. Check this out. Frankfurt template.
+%http://tex.stackexchange.com/questions/39345/piecewise-highlighting-in-beamer-presentation
+%https://joerglenhard.wordpress.com/2011/08/01/beamer-customization-colors/
+
+%\geometry{vmargin=0.3in} % Formating the top bar
+\usepackage[UKenglish]{isodate} % for: \today 
+\cleanlookdateon                % for: \today
+
+%My Color Stuff
+\usepackage{caption}
+\usepackage{xcolor} % http://en.wikibooks.org/wiki/LaTeX/Colors
+                    % http://latexcolor.com/
+\definecolor{grey}{rgb}{0.15, 0.15, 0.15} % Sets default color. CHANGE THIS!
+\definecolor{pumpkin}{rgb}{1.0, 0.46, 0.09}
+\definecolor{darktan}{rgb}{1.0, 0.66, 0.07}
+\definecolor{coral}{rgb}{1.0, 0.5, 0.31}
+\definecolor{burlywood}{rgb}{0.98, 0.82 0.6}
+\pagecolor{grey} % Sets the bar color.
+\def\mylitecolor{pumpkin}     % Bullet Color.       CHANGE THIS!
+\def\mycolor{\color{pumpkin}} % Frame Title Color.  CHANGE THIS!
+\def\mydarkcolor{\color{pumpkin}} % Figure Color.   CHANGE THIS!
+\setbeamercolor{itemize item}{fg=\mylitecolor}
+\setbeamercolor{enumerate item}{fg=\mylitecolor}
+\setbeamercolor{enumerate subitem}{fg=\mylitecolor}
+\setbeamercolor{enumerate subsubitem}{fg=\mylitecolor}
+\setbeamercolor{itemize subitem}{fg=\mylitecolor}
+\setbeamercolor{itemize subsubitem}{fg=\mylitecolor}
+\setbeamercolor{title}{fg=\mylitecolor}
+\setbeamercolor{footlinecolor}{bg=black!93,fg=\mylitecolor}
+\setbeamercolor{author}{fg=pumpkin} %burlywood
+\setbeamercolor{date}{fg=pumpkin}   %burlywood
+\setbeamercolor{institute}{fg=pumpkin} %burlywood
+%\setbeamertemplate{frametitle}{\color{pumpkin}\bfseries}
+\setbeamercolor{frametitle}{fg=pumpkin, bg=grey}
+
+
+
+\DeclareCaptionFont{figcol}{\mydarkcolor} % color of the word Figure: in figure captions
+\captionsetup{ font=scriptsize,
+               labelfont={bf,figcol,scriptsize} } %,textfont={black} }
+\def\hline{ \textcolor{grey}{\hrulefill}\\ }
+
+
+
+% See this for footline:
+%http://tex.stackexchange.com/questions/26476/add-footer-text-to-all-slides-in-beamer
+%http://tex.stackexchange.com/questions/105613/footer-in-beamer
+\beamertemplatenavigationsymbolsempty
+\setbeamertemplate{footline}{
+  \hbox{
+    \hspace{-.15cm}
+    \begin{beamercolorbox}[ht=2mm,dp=1mm,
+                           rightskip=.1cm,leftskip=.1cm]{footlinecolor} 
+      \insertshortauthor\hfill
+      \insertshorttitle\hfill
+      \insertframenumber/\inserttotalframenumber
+    \end{beamercolorbox}
+  } % end of hbox
+} % end of footline 
+
+\mode<all>
