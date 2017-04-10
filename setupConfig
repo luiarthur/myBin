@@ -47,6 +47,7 @@ ln -s $PWD/combineJars ~/bin/combineJars
 ln -s $PWD/mdgen ~/bin/mdgen
 ln -s $PWD/beamergen ~/bin/beamergen
 ln -s $PWD/beamerthemealui.sty ~/.texmf-config/tex/beamerthemealui.sty
+ln -s $PWD/x2csv ~/bin/x2csv
 
 # git clones:
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
