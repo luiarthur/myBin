@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 
 argnum=$#
 
@@ -11,5 +11,4 @@ else
   do
     libreoffice --headless --convert-to csv $f
   done
-
 fi
