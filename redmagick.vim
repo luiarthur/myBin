@@ -106,6 +106,8 @@ call ExecHi("PmenuSel",  DarkGrey,Green)
 call ExecHi("PmenuSbar", DarkGrey,Green)
 call ExecHi("PmenuThumb",DarkGrey,Green)
 
+call ExecHi("SpellBad",DarkRed,Green,NONE,bold)
+
 hi Underlined term=underline cterm=underline ctermfg=NONE ctermbg=NONE
 
 hi! link diffAdded       DiffAdd
