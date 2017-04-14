@@ -7,10 +7,12 @@
 #  dummy1a(...)
 #}
 
-options(repos=structure(c(CRAN="http://cran.stat.sfu.ca")))
-# my_scala_lib_dir <- "path-to-scala-libs"
+options(
+  repos=structure(c(CRAN="http://cran.stat.sfu.ca")),
+  # devtools
+  devtools.name="Arthur Lui",
+  devtools.desc.author="Arthur Lui <luiarthur@ucsc.edu> [aut, cre]"
+)
 
-# devtools
-devtools.name <- Arthur Lui
-devtools.desc.author <- "Arthur Lui <luiarthur@ucsc.edu> [aut, cre]"
+# my_scala_lib_dir <- "path-to-scala-libs"
 
