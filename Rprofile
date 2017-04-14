@@ -8,5 +8,9 @@
 #}
 
 options(repos=structure(c(CRAN="http://cran.stat.sfu.ca")))
-
 # my_scala_lib_dir <- "path-to-scala-libs"
+
+# devtools
+devtools.name <- Arthur Lui
+devtools.desc.author <- "Arthur Lui <luiarthur@ucsc.edu> [aut, cre]"
+
