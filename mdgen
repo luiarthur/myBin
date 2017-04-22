@@ -31,6 +31,7 @@ fontsize: 12pt
 # see: http://www.mdlerch.com/tutorial-for-pandoc-citations-markdown-to-latex.html
 
 header-includes: 
+#{{{1
     - \\usepackage{bm}
     - \\usepackage{bbm}
     - \\usepackage{graphicx}
@@ -62,6 +63,7 @@ header-includes:
     #
     - \\allowdisplaybreaks
     - \\def\\M{\\mathcal{M}}
+#}}}1
 ---
 
 [//]: # ( example image embedding

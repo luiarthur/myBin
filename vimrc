@@ -216,3 +216,19 @@ au BufRead *.scala call TextEnableCodeSnip('r', 'R eval \"\"\"', '\"\"\"', 'Spec
 au BufRead *.jl call TextEnableCodeSnip('r', 'R\"\"\"', '\"\"\"', 'SpecialComment')
 " Search for scala code snippets in R
 au BufRead *.R call TextEnableCodeSnip('scala', "'/\\*scala\\*/", "/\\*scala\\*/'", 'SpecialComment')
+
+
+" Markdown Highlighting. Requires vim-markdown (plasticboy)
+function! MyMkdAddOn() abort 
+  if get(g:, 'vim_markdown_math', 0)
+    syn region mkdMath start="\\begin{align\*}" end="\\end{align\*}" contains=@tex keepend
+  endif
+  let g:tex_comment_nospell= 1
+  syn match mkdRef '@\w\+'
+  syn cluster mkdNonListItem add=mkdRef
+  set foldmethod=marker
+endfunction
+let g:vim_markdown_math = 1
+let g:vim_markdown_frontmatter = 1
+"let g:vim_markdown_folding_disabled = 1
+au BufRead *.md call MyMkdAddOn()

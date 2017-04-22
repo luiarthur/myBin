@@ -29,6 +29,7 @@ bibliographystyle: plain
 # see: http://www.mdlerch.com/tutorial-for-pandoc-citations-markdown-to-latex.html
 
 header-includes:
+#{{{1
     - \usepackage[T1]{fontenc}
     - \usepackage{amssymb,bm,mathtools,amsmath,bbm}
     - \usepackage{graphicx,caption,float}
@@ -60,6 +61,7 @@ header-includes:
     - \author[A. Lui]{Arthur Lui}
     - \institute{ AMS\\\\ UC Santa Cruz \footnote{UCSC is awesome}}
     # OTHER defs:
+#}}}1
 ---
 
 [//]: # (Make Title Page)
