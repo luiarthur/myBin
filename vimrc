@@ -214,3 +214,5 @@ endfunction
 au BufRead *.scala call TextEnableCodeSnip('r', 'R eval \"\"\"', '\"\"\"', 'SpecialComment')
 " Search for R code snippets in julia
 au BufRead *.jl call TextEnableCodeSnip('r', 'R\"\"\"', '\"\"\"', 'SpecialComment')
+" Search for scala code snippets in R
+au BufRead *.R call TextEnableCodeSnip('scala', "'/\\*scala\\*/", "/\\*scala\\*/'", 'SpecialComment')
