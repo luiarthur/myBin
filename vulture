@@ -5,7 +5,7 @@ from watchdog.observers import Observer
 from watchdog.events import PatternMatchingEventHandler
 
 if len(sys.argv) < 3:
-    print "Usage:    ./vulture fileToWatch cmdToExecute"
+    print "Usage:    vulture fileToWatch cmdToExecute"
     sys.exit(1)
 
 fullpath = sys.argv[1]
