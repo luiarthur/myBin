@@ -227,6 +227,7 @@ function! MyMkdAddOn() abort
   syn match mkdRef '@\w\+'
   syn cluster mkdNonListItem add=mkdRef
   set foldmethod=marker
+  syn cluster texCommentGroup	contains=texTodo,@NoSpell
 endfunction
 let g:vim_markdown_math = 1
 let g:vim_markdown_frontmatter = 1
