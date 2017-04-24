@@ -64,6 +64,10 @@ header-includes:
 #}}}1
 ---
 
+[comment]: <> (%
+  These are comments
+%)
+
 [//]: # (Make Title Page)
 \date{\today}
 \titlepage

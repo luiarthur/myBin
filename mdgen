@@ -66,6 +66,11 @@ header-includes:
 #}}}1
 ---
 
+[comment]: <> (%
+  These are comments
+%)
+
+
 [//]: # ( example image embedding
 \\beginmyfig
 \\includegraphics[height=0.5\\textwidth]{path/to/img/img.pdf}
