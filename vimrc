@@ -225,9 +225,12 @@ function! MyMkdAddOn() abort
   endif
   let g:tex_comment_nospell= 1
   syn match mkdRef '@\w\+'
-  syn cluster mkdNonListItem add=mkdRef
   set foldmethod=marker
   syn cluster texCommentGroup	contains=texTodo,@NoSpell
+  " Markdown comments 
+  syn region mkdComment start="\[comment\]:\s<> (%" end="%)"
+  hi def link mkdComment Comment
+  syn cluster mkdNonListItem add=mkdRef,mkdComment
 endfunction
 let g:vim_markdown_math = 1
 let g:vim_markdown_frontmatter = 1
