@@ -26,7 +26,7 @@ Plugin 'fatih/vim-go'            " Go-lang
 "Plugin 'vim-pandoc/vim-pandoc'        "pandoc
 
 " For Markdown
-set nofoldenable    " disable folding
+"set nofoldenable    " disable folding
 Plugin 'plasticboy/vim-markdown' " Markdown
 let g:vim_markdown_folding_disabled = 1
 let g:vim_markdown_math = 1
