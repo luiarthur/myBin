@@ -216,6 +216,7 @@ au BufRead *.scala call TextEnableCodeSnip('r', 'R eval \"\"\"', '\"\"\"', 'Spec
 au BufRead *.jl call TextEnableCodeSnip('r', 'R\"\"\"', '\"\"\"', 'SpecialComment')
 " Search for scala code snippets in R
 au BufRead *.R call TextEnableCodeSnip('scala', "'/\\*scala\\*/", "/\\*scala\\*/'", 'SpecialComment')
+au BufRead *.R call TextEnableCodeSnip('sql', "sqldf('", "')", 'SpecialComment')
 
 
 " Markdown Highlighting. Requires vim-markdown (plasticboy)
