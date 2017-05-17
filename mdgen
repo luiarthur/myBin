@@ -12,13 +12,12 @@ then
   echo "        $ mdgen nameOfNewMarkdownDocument"
   echo
 else
-  currDate=$(date +"%e %B %Y")
   fname="$1"
   # create an initial build.sbt file
   echo "---
 title: \"Title\"
 author: Arthur Lui
-date: \"$currDate\"
+date: \"\\\\today\"
 geometry: margin=1in
 fontsize: 12pt
 
