@@ -7,12 +7,15 @@
 #sudo apt-get install git
 #git clone https://github.com/luiarthur/myBin ~/Repo
 
+### For recompiling C / C++ (especially Rcpp)
+#sudo apt-get install ccache
 
 # Copy the following to HOME:
 mkdir -p ~/bin
 mkdir -p ~/lib/R_lib
 mkdir -p ~/.vim/colors
 mkdir -p ~/.texmf-config/tex # for custom beamer theme
+mkdir -p ~/.R
 
 ln -s $PWD/redmagick.vim ~/.vim/colors
 cp tmux.conf ~/.tmux.conf
@@ -25,6 +28,7 @@ cp gitignore_global ~/.gitignore_global
 cp pythonrc ~/.pythonrc
 cp Rprofile ~/.Rprofile
 cp Renviron ~/.Renviron
+cp Makevars ~/.R/
 cp resources ~/bin/resources
 cp ssh_config ~/.ssh/config
 
