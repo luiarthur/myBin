@@ -23,6 +23,7 @@ mkdir -p ~/.texmf-config/tex # for custom beamer theme
 mkdir -p ~/.R
 
 ln -s $PWD/redmagick.vim ~/.vim/colors
+ln -s $PWD/mouse ~/bin/mouse
 cp tmux.conf ~/.tmux.conf
 cp vimrc ~/.vimrc
 cp vimrc.line-feeder-3 ~/.vimrc.line-feeder-3
