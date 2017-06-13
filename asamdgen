@@ -81,7 +81,9 @@ include-before:
 
 
 [comment]: <> (%
-  These are comments
+For figures and tables to stretch across two columns
+use \\begin{figure*} \\end{figure*} and
+\\begin{table*}\\end{table*}
 %)
 
 " > $fname.md
