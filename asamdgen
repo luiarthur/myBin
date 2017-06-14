@@ -84,6 +84,7 @@ include-before:
 For figures and tables to stretch across two columns
 use \\begin{figure*} \\end{figure*} and
 \\begin{table*}\\end{table*}
+Also, \\begin{figure}[H] keeps figures close.
 %)
 
 " > $fname.md
