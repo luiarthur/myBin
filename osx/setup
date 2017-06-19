@@ -17,6 +17,9 @@ mkdir -p ~/.R
 # Install Vundle
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
+# Install gnu-sed
+brew install gnu-sed # For gush
+
 # Copy scripts
 cp profile ~/.profile
 cp vimrc ~/.vimrc
