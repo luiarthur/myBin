@@ -69,5 +69,6 @@ brew install python
 #brew cask install MacTex
 #brew cask install texmaker
 
-
+# Install Pandoc
+brew install pandoc
 
