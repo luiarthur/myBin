@@ -18,7 +18,8 @@ mkdir -p ~/.R
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 # Install gnu-sed for gush
-brew uninstall gnu-sed
+# If gnu-sed is previously installed,
+# brew uninstall gnu-sed
 brew install gnu-sed --with-default-names
 
 # Copy scripts
