@@ -57,7 +57,11 @@ ln -s $PWD/../asamdgen ~/bin/asamdgen
 
 
 # Install software
+# Install TMUX
 brew install tmux # Note in osx, to change pane size: Ctrl-b (release) + Option + Arrow
+brew install reattach-to-user-namespace # so that open can be used in tmux
+#brew upgrade reattach-to-user-namespace
+
 brew install MacVim
 brew install sbt
 brew install scala
