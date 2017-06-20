@@ -62,8 +62,8 @@ brew install MacVim
 brew install sbt
 brew install scala
 brew install python # Installs python / pip / Setuptools (default osx python doesn't have pip)
-brew install wget # SLOW. Consider just doing `curl -O someurl.com`
-brew install pandoc # SLOW
+brew install wget # 15 minutes. Consider just doing `curl -O someurl.com`
+brew install pandoc # SLOW!...
 
 # Install MaxTex
 # http://tex.stackexchange.com/questions/106113/is-there-any-way-to-have-a-latex-compiler-on-a-mac-without-root-access
