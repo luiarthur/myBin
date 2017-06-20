@@ -59,17 +59,14 @@ ln -s $PWD/../asamdgen ~/bin/asamdgen
 # Install software
 brew install tmux # Note in osx, to change pane size: Ctrl-b (release) + Option + Arrow
 brew install MacVim
-brew install wget
-
-# Installing python / pip / Setuptools (default osx python doesn't have pip)
-brew install python
+brew install sbt
+brew install scala
+brew install python # Installs python / pip / Setuptools (default osx python doesn't have pip)
+brew install wget # SLOW. Consider just doing `curl -O someurl.com`
+brew install pandoc # SLOW
 
 # Install MaxTex
 # http://tex.stackexchange.com/questions/106113/is-there-any-way-to-have-a-latex-compiler-on-a-mac-without-root-access
 #brew install caskroom/cask/brew-cask
 #brew cask install MacTex
 #brew cask install texmaker
-
-# Install Pandoc
-brew install pandoc
-
