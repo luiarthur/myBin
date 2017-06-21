@@ -13,6 +13,7 @@ mkdir -p ~/lib/R_lib
 mkdir -p ~/.vim/colors
 mkdir -p ~/.R
 mkdir -p ~/Library/texmf/tex # for custom beamer theme
+mkdir -p ~/.vim/spell
 
 # Install Vundle
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
