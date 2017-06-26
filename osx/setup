@@ -72,7 +72,7 @@ brew install pandoc # SLOW!...
 
 # Install R
 brew tap homebrew/science
-brew install r
+brew install r # SLOW
 
 # Install MaxTex
 # http://tex.stackexchange.com/questions/106113/is-there-any-way-to-have-a-latex-compiler-on-a-mac-without-root-access
