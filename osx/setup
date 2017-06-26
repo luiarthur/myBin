@@ -70,6 +70,10 @@ brew install python # Installs python / pip / Setuptools (default osx python doe
 brew install wget # 15 minutes. Consider just doing `curl -O someurl.com`
 brew install pandoc # SLOW!...
 
+# Install R
+brew tap homebrew/science
+brew install r
+
 # Install MaxTex
 # http://tex.stackexchange.com/questions/106113/is-there-any-way-to-have-a-latex-compiler-on-a-mac-without-root-access
 #brew install caskroom/cask/brew-cask
