@@ -31,6 +31,7 @@ cp ../tmux.conf ~/.tmux.conf
 cp ../gitconfig ~/.gitconfig
 cp ../gitignore_global ~/.gitignore_global
 cp ../pythonrc ~/.pythonrc
+touch ~/.pythonhistory
 cp ../Rprofile ~/.Rprofile
 cp ../Renviron ~/.Renviron
 cp ../resources ~/bin/resources
