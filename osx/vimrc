@@ -24,6 +24,7 @@ Plugin 'JuliaEditorSupport/julia-vim' "julia
 Plugin 'godlygeek/tabular'       " Auto Indent
 Plugin 'octol/vim-cpp-enhanced-highlight' " C++
 Plugin 'fatih/vim-go'            " Go-lang
+Plugin 'luiarthur/stan.vim'      " STAN modeling
 "Plugin 'vim-pandoc/vim-pandoc-syntax' " pandoc
 "Plugin 'vim-pandoc/vim-pandoc'        "pandoc
 
