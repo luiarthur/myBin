@@ -40,10 +40,41 @@ function! LineFeederSetUp()
   endif
 endfunction
 
+" Sources a file into Console Below
+function! SourceFile()
+  let ext = expand("%:e")
+  let fn = expand("%:p")
+  let cmd = ""
+
+  if ext == "R"
+    let cmd = "source('" . fn . "')"
+  elseif ext == "jl"
+    let cmd = "include(\"" . fn . "\")"
+  elseif ext == "scala"
+    let cmd = ":load " . fn
+    echo cmd
+  elseif ext == "py"
+    let cmd = "execfile('" . fn . "')"
+  elseif ext == "sh"
+    let cmd = "source " . fn
+  endif
+
+  if cmd != ""
+    call system("tmux select-pane -D")
+    call system("tmux send-keys " . shellescape(cmd . ""))
+    call system("tmux select-pane -U")
+  else
+    %call LineFeederNextLine()
+  endif
+
+endfunction
+
+
 nnoremap <silent> <C-k> :call LineFeederSetUp()<cr>
 nnoremap <silent> <C-j> :call LineFeederNextLine()<cr>
 nnoremap <silent> <C-l> :call LineFeederSideLine()<cr>
-nnoremap <silent> <C-h> :%call LineFeederNextLine()<cr>
+"nnoremap <silent> <C-h> :%call LineFeederNextLine()<cr>
+nnoremap <silent> <C-H> :call SourceFile()<cr>
 
 " Arthur Lui
 function! LineFeederChunk()
