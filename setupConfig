@@ -62,3 +62,7 @@ ln -s $PWD/asamdgen ~/bin/asamdgen
 
 # git clones:
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+# Audio Editting / Transcription
+# transcribe!: https://www.seventhstring.com/xscribe/download_linux.html
+# Audacity: http://www.audacityteam.org/download/
