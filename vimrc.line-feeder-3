@@ -56,7 +56,7 @@ function! SourceFile()
     let cmd = "execfile('" . fn . "')"
   elseif ext == "sh"
     let cmd = "source " . fn
-  elseif ext == "kotlin"
+  elseif ext == "kt"
     let cmd = ":load  " . fn
   endif
 
