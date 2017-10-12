@@ -5,6 +5,11 @@
 " https://github.com/xero/blaquemagick.vim
 " red magick version by Arthur Lui
 
+" in vim, see more options by:
+" :h hl-SpellBad
+
+" For colors, see: https://jonasjacek.github.io/colors/
+
 set background=dark
 hi clear
 
@@ -57,6 +62,7 @@ let DarkRed       = 88 "52
 let Green         = 2 "46
 let Black         = 0
 let White         = 194
+let LightBlue     = 75
 let NONE          = "NONE"
 let bold          = "bold"
 
@@ -107,7 +113,9 @@ call ExecHi("PmenuSel",  DarkGrey,Green)
 call ExecHi("PmenuSbar", DarkGrey,Green)
 call ExecHi("PmenuThumb",DarkGrey,Green)
 
-call ExecHi("SpellBad",DarkRed,Green,NONE,bold)
+"call ExecHi("SpellBad",DarkRed,Green,NONE,bold)
+call ExecHi("SpellBad",White,Red3,NONE,bold)
+call ExecHi("SpellCap",DarkRed,LightBlue,NONE,bold)
 
 hi Underlined term=underline cterm=underline ctermfg=NONE ctermbg=NONE
 
