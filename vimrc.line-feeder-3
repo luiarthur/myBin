@@ -52,11 +52,12 @@ function! SourceFile()
     let cmd = "include(\"" . fn . "\")"
   elseif ext == "scala"
     let cmd = ":load " . fn
-    echo cmd
   elseif ext == "py"
     let cmd = "execfile('" . fn . "')"
   elseif ext == "sh"
     let cmd = "source " . fn
+  elseif ext == "kt"
+    let cmd = ":load  " . fn
   endif
 
   if cmd != ""

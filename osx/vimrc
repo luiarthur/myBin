@@ -25,6 +25,7 @@ Plugin 'godlygeek/tabular'       " Auto Indent
 Plugin 'octol/vim-cpp-enhanced-highlight' " C++
 Plugin 'fatih/vim-go'            " Go-lang
 Plugin 'luiarthur/stan.vim'      " STAN modeling
+Plugin 'luiarthur/kotlin-vim'       " Kotlin
 "Plugin 'vim-pandoc/vim-pandoc-syntax' " pandoc
 "Plugin 'vim-pandoc/vim-pandoc'        "pandoc
 
