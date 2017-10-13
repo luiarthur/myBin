@@ -71,6 +71,7 @@ header-includes:
 
 
 [//]: # ( example image embedding
+{{{1
 \\beginmyfig
 \\includegraphics[height=0.5\\textwidth]{path/to/img/img.pdf}
 \\caption{some caption}
@@ -95,6 +96,7 @@ header-includes:
     \\label{fig:myLabel2}
   \\end{minipage}
 \\end{figure*}
+1}}}
 )
 
 
