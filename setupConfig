@@ -41,6 +41,7 @@ cp ssh_config ~/.ssh/config
 # Soft link the following to ~/bin:
 ln -s $PWD/dirsize ~/bin/dirsize
 ln -s $PWD/vulture ~/bin/vulture
+ln -s $PWD/md-include.py ~/bin/md-include.py
 ln -s $PWD/gush ~/bin/gush
 ln -s $PWD/gcal ~/bin/gcal
 ln -s $PWD/gcalbird ~/bin/gcalbird
