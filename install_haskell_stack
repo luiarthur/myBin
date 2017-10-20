@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Installs stack (haskell build tool) which also inbstalls haskell WITHOUT ROOT PRIVILEGES
+
 # Original from: https://github.com/yantonov/install-ghc/blob/master/ubuntu/install-ghc-ubuntu.md
 # Modified by Arthur Lui on 20 October, 2017
 
