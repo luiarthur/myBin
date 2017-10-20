@@ -14,6 +14,7 @@ STACK_DIST_URL="https://www.stackage.org/stack/$STACK_PLATFORM-$STACK_ARCHITECTU
 STACK_INSTALL_DIR="$HOME/programs"
 CURL_CUTOFF_VERSION="7.21.2"
 CURL_VERSION=`curl -V | grep -oP "(?<=curl\s)\d+.\d+.\d+"`
+LIB="$HOME/lib"
 
 cd $DOWNLOADS_DIR
 
@@ -51,6 +52,25 @@ echo "Completed installing stack."
 # Source bashrc
 source $PROFILE
 
+# Install libgmp3 if needed
+# see for newest version: https://gmplib.org/
+
+#GMP_VERSION="6.1.2"
+#curl -O https://gmplib.org/download/gmp/gmp-${GMP_VERSION}.tar.bz2
+#tar xfv `ls gmp*`
+#cd gmp*
+#mkdir -p $LIB
+#./configure --prefix=$LIB/libgmp
+#make 
+#make install
+#cd ..
+#rm -rf gmp*
+
+# Add THIS TO BASHRC
+#LIBGMP_HOME="$LIB/libgmp/lib"
+#export LD_LIBRARY_PATH=$LIBGMP_HOME:$LD_LIBRARY_PATH
+
+#
 echo "Now setting up stack."
 stack setup
 
