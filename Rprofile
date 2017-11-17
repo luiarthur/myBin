@@ -21,3 +21,13 @@ options(
     if(interactive()) try(savehistory("~/.Rhistory"))
 
 if(interactive()) try(utils::loadhistory(file="~/.Rhistory"))
+
+### For package generatrion.
+#options(
+#  repos=structure(c(CRAN="http://cran.stat.sfu.ca")),
+#  # devtools
+#  devtools.name="Arthur Lui",
+#  devtools.desc.author="Arthur Lui <luiarthur@ucsc.edu> [aut, cre]"
+#)
+
+
