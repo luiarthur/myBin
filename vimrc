@@ -224,8 +224,9 @@ au BufRead *.R call TextEnableCodeSnip('sql', "sqldf('", "')", 'SpecialComment')
 " Markdown Highlighting. Requires vim-markdown (plasticboy)
 function! MyMkdAddOn() abort 
   if get(g:, 'vim_markdown_math', 0)
-    syn region mkdMath start="\\begin{align\*}" end="\\end{align\*}" contains=@tex keepend
-    syn region mkdMath start="\\begin{align}" end="\\end{align}" contains=@tex keepend
+    syn region mkdMath start="\\begin{\w\+}" end="\\end{\w\+}" contains=@tex keepend
+    syn region mkdMath start="\\begin{\w\+\*}" end="\\end{\w\+\*}" contains=@tex keepend
+
   endif
   let g:tex_comment_nospell= 1
   syn match mkdRef '@\w\+'
