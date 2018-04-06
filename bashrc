@@ -142,6 +142,9 @@ PS1="\h:\W$ "
 export EDITOR=vim
 export PATH=~/bin:$PATH
 
+### R
+#export R_HISTFILE=~/.Rhistory
+
 # Julia
 #export JULIA_HOME=~/programs/julia-0.4.5/bin
 #export PATH=$JULIA_HOME:$PATH

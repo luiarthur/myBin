@@ -17,10 +17,9 @@ options(
 # my_scala_lib_dir <- "path-to-scala-libs"
 
 ### Save / Load R history
-.Last <- function()
-    if(interactive()) try(savehistory("~/.Rhistory"))
-
-if(interactive()) try(utils::loadhistory(file="~/.Rhistory"))
+if (interactive()) {
+  .Last <- function() try(savehistory("~/.Rhistory"))
+}
 
 ### For package generatrion.
 #options(
