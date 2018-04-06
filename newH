@@ -15,7 +15,7 @@ def gen_new_hfile_contents(f):
 #define <NAME_OF_FILE>
 
 #endif
-""".replace("<NAME_OF_FILE>", f.upper())
+""".replace("<NAME_OF_FILE>", f.upper()).replace('.', '_')
 
 NEW_FILE_CONTENTS = gen_new_hfile_contents(NEW_FILE_NAME)
 
