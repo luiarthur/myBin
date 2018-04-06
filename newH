@@ -10,13 +10,22 @@ if len(sys.argv) != 2:
 NEW_FILE_NAME = sys.argv[1]
 
 ### Create Contents
-NEW_FILE_CONTENTS = """#ifndef <NAME_OF_FILE>
+def gen_new_hfile_contents(f):
+    return """#ifndef <NAME_OF_FILE>
 #define <NAME_OF_FILE>
 
 #endif
-""".replace("<NAME_OF_FILE>", NEW_FILE_NAME.upper())
+""".replace("<NAME_OF_FILE>", f.upper())
+
+NEW_FILE_CONTENTS = gen_new_hfile_contents(NEW_FILE_NAME)
+
+if NEW_FILE_NAME in os.listdir("./"):
+    overwrite = raw_input(NEW_FILE_NAME + ' already exists. Overwrite? (Y/N):  ')
+    if overwrite[0] in ['Y', 'y']:
+        with open(NEW_FILE_NAME,"w") as f:
+            f.write(NEW_FILE_CONTENTS)
+    else:
+        sys.exit(0)
 
 
-with open(NEW_FILE_NAME,"w") as f:
-    f.write(NEW_FILE_CONTENTS)
 
