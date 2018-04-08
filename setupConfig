@@ -63,7 +63,7 @@ ln -s $PWD/asamdgen ~/bin/asamdgen
 ln -s $PWD/pdfPage ~/bin/pdfPage
 ln -s $PWD/newH ~/bin/newH
 ### For midi keyboard / synthesizer / midiculous, etc
-ln -s $PWD/start_zyn ~/bin/start_zyn
+ln -s $PWD/zyn ~/bin/zyn
 ln -s $PWD/reset_audio ~/bin/reset_audio
 
 # git clones:

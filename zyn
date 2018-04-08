@@ -16,3 +16,9 @@ vmpk &
 # Check out: https://www.youtube.com/watch?v=Y-BV2B5eFHw
 # 
 # If this script doesn't work the first time, run it again.
+#
+# To use sound again afterwards, run `reset_audio`, or simply:
+# ```bash
+# pulseaudio -k && sudo alsa force-reload
+# ```
+#
