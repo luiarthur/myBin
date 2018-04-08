@@ -4,6 +4,7 @@
 
 qjackctl &
 zynaddsubfx &
+vmpk &
 
 # in JackConnect, make sure to 
 # 1. Connect -> ALSA -> Casio (out) to Zyn (in)
@@ -13,3 +14,5 @@ zynaddsubfx &
 # Q: Can I use midiculous?
 #
 # Check out: https://www.youtube.com/watch?v=Y-BV2B5eFHw
+# 
+# If this script doesn't work the first time, run it again.
