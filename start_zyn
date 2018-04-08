@@ -2,8 +2,8 @@
 
 # See: https://askubuntu.com/questions/19764/how-does-one-set-up-a-midi-keyboard
 
-qjackctl &
-zynaddsubfx &
+sudo qjackctl &
+sudo zynaddsubfx &
 
 # in JackConnect, make sure to 
 # 1. Connect -> ALSA -> Casio (out) to Zyn (in)
