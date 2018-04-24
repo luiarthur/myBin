@@ -255,4 +255,11 @@ endfunction
 au BufRead *.tex call MyTexAddOn()
 au BufRead *.tex setlocal spellfile=~/.vim/spell/tex.utf-8.add " use a special latex dictionary for latex
 
+" My R addons
+function! MyRAddon() abort 
+  " see /usr/share/vim/vim74/syntax/r.vim
+  syn match rOKeyword contained "@\(description\)"
+endfunction
+au BufRead *.R call MyRAddon()
+
 
