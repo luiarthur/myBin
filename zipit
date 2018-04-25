@@ -7,8 +7,7 @@ then
   echo "  Usage:"
   echo "        $ zipit nameOfDirToZip"
   echo
+else
+  d="$1"
+  zip -r ${d}.zip ${d}
 fi
-
-d="$1"
-
-zip -r ${d}.zip ${d}
