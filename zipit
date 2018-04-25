@@ -1,0 +1,14 @@
+#!/bin/bash
+
+numargs=$#
+
+if [ $numargs != 1 ]
+then
+  echo "  Usage:"
+  echo "        $ zipit nameOfDirToZip"
+  echo
+fi
+
+d="$1"
+
+zip -r ${d}.zip ${d}
